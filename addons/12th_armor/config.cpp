@@ -445,17 +445,44 @@ class CfgWeapons {
     };
   };
 
-  class twelfth_helm_base: TCP_H_Helmet_CH43A_Base {
+  class twelfth_helm_base: H_HelmetB {
     scope=0;
     author="Waylen";
     scopeArsenal=0;
     displayName="[12th] Helmet Base (DON'T USE)";
     ace_hearing_protection=1;
-    ace_hearing_lowerVolume=0.30000001;
+    ace_hearing_lowerVolume=0;
     model="\halo_marine\halo_helm_01";
     picture="";
     class ItemInfo: HeadgearItem {
       uniformModel="\halo_marine\halo_helm_01";
+      mass=40;
+      modelSides[]={6};
+      passThrough=0.1;
+      class HitpointsProtectionInfo {
+        class Head {
+          hitpointName="HitHead";
+          armor=20;
+          passThrough=0.1;
+        };
+      };
+    };
+  };
+  // Helmet_CH43A
+  class twelfth_helmCH43A_base: TCP_H_Helmet_CH43A_Base {
+    scope=2;
+    author="Waylen";
+    scopeArsenal=2;
+    displayName="[12th] Helmet Base (DON'T USE)";
+    ace_hearing_protection=1;
+    ace_hearing_lowerVolume=0;
+	class TCP_uniformDecals
+	{
+		selectionName = "nameCH43A";
+	};
+	model = "\TCP\Characters\BLUFOR\UNSC\Army\Headgear\helmet_CH43A\h_helmet_CH43A.p3d";
+    class ItemInfo: HeadgearItem {
+	  uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Headgear\helmet_CH43A\h_helmet_CH43A.p3d";
       mass=40;
       modelSides[]={6};
       passThrough=0.1;
@@ -475,7 +502,7 @@ class CfgWeapons {
     scopeArsenal=0;
     displayName="[12th] Pilot Helmet Base (DON'T USE)";
     ace_hearing_protection=1;
-    ace_hearing_lowerVolume=0.30000001;
+    ace_hearing_lowerVolume=0;
     model="A3\Characters_F\Common\headgear_helmet_heli";
     picture="";
     class ItemInfo: HeadgearItem {
@@ -504,16 +531,16 @@ class CfgWeapons {
 
   //-UNIFORM-WEPS-----------------------------------------------------
   ALL_UNI_WEP(std)
-  ALL_UNI_WEP(forest)
+/*   ALL_UNI_WEP(forest)
   ALL_UNI_WEP(drk)
   ALL_UNI_WEP(urban)
-  ALL_UNI_WEP(desert)
+  ALL_UNI_WEP(desert) */
 
   //-HELMETS----------------------------------------------------------
   ALL_HELM(std)
 
   // Pilot Helmets
-  PILOT_HELM(default, "[12th][Pilot] Helmet",default,default,default,default,default)
+  //PILOT_HELM(default, "[12th][Pilot] Helmet",default,default,default,default,default)
 };
 
 // -----------------------------------------------------------------------------
@@ -625,7 +652,7 @@ class XtdGearModels {
   };
 };
 
-class XtdGearInfos {
+/* class XtdGearInfos {
   class CfgWeapons {
     // THIS IS WHERE EXTENDED ARSENAL PULLS INFO FOR THE SELECTIONS FROM
     //-------------------------------------- Uniforms
@@ -654,3 +681,4 @@ class XtdGearInfos {
 
   };
 };
+ */
