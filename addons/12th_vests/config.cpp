@@ -160,17 +160,25 @@ class CfgWeapons {
     //-New Armour-----------------------------------------------------
   
     // Base uniform item for new-gen armor
-  class twelfth_M43A_Light_base_wep: TCP_V_M43A_Light_Black {
+  class twelfth_M43A_Light_base_wep : TCP_V_M43A_Light_Black {
     author="Sammy";
     scope=2;
     scopeArsenal=2;
     displayName="[12th] Armor Base Vest";
     ACE_GForceCoef=0.4;
-	model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_Light.p3d";
+	class TCP_uniformDecals
+	{
+		decalColor = "white";
+		selectionAffiliation = "";
+		selectionBloodType = "";
+		selectionName = "nameM43A";
+		selectionRank = "rankM43A";
+	};
+	hiddenSelections[] = {"camo","decals"};
     class ItemInfo: ItemInfo {
       containerClass="Supply100";
 	  VEST_HITPOINT_INFO 
-	  };
+    };
   };
 /*     class twelfth_M43A_BaseSec1_base_wep: TCP_V_M43A_BaseSec_1_Black {
     author="Sammy";
