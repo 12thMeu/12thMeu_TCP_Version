@@ -69,6 +69,32 @@ class twelfth_uni_##CAMO##_##PLATOON##_##ROLE##_veh: twelfth_uni_ng_base_veh{   
   };                                                                            \
 };                                                                              \
 
+#define TSHIRT_UNIFORM_VEH(CAMO,PLATOON,ROLE,ARM,DISPLAYNAME)                          \
+class twelfth_uni_##CAMO##_##PLATOON##_##ROLE##_veh: twelfth_uni_ng_base_veh{   \
+  author="Waylen";                                                              \
+  picture="";                                                                   \
+  scope=1;                                                                      \
+  scopeArsenal=2;                                                               \
+  displayName=DISPLAYNAME;                                                      \
+  hiddenSelectionsTextures[] =                                                  \
+  {                                                                             \
+    QP(uniforms\armor\bases\##CAMO\##PLATOON##_chest_co.paa),                   \
+    QP(uniforms\armor\arms\##ARM\##PLATOON##_##ROLE##_arms_co.paa),             \
+    QP(uniforms\armor\bases\##CAMO\##PLATOON##_legs_co.paa),                    \
+    QP(uniforms\armor\bases\##CAMO\bdu_co.paa),                                 \
+    QP(uniforms\armor\bases\##CAMO\misc_co.paa)                                 \
+  };                                                                            \
+};             
+
+
+
+
+
+
+
+
+
+
 #define UNIFORM_WEP(CAMO,PLATOON,ROLE,DISPLAYNAME)                              \
 class twelfth_uni_##CAMO##_##PLATOON##_##ROLE##_wep : twelfth_uni_ng_base_wep { \
   author="Waylen";                                                              \
@@ -252,7 +278,32 @@ class twelfth_helm_##SUFFIX##: twelfth_helm_base {    \
 // this is shoved into here so that it need not be repeated 20x for different variants
 
 #define ALL_HELM(CAMO)                                                  \
-  HELM_CH43A(##CAMO##,         "[12th][Inf] Helmet")                    \
+  HELM_CH43A(##CAMO##,         "[12th][Inf] Helmet")                       \
+  HELM_CH43A(##CAMO##_med,     "[12th][Inf] Helmet (Corpsman)")            \
+  HELM_CH43A(##CAMO##_1pl,     "[12th][Inf][1Plt] Helmet")                 \
+  HELM_CH43A(##CAMO##_1pl_ftl, "[12th][Inf][1Plt] Helmet (FTL)")           \
+  HELM_CH43A(##CAMO##_1pl_sl,  "[12th][Inf][1Plt] Helmet (SL)")            \
+  HELM_CH43A(##CAMO##_1pl_psg, "[12th][Inf][1Plt] Helmet (PSG)")           \
+  HELM_CH43A(##CAMO##_1pl_pl,  "[12th][Inf][1Plt] Helmet (PL)")            \
+  HELM_CH43A(##CAMO##_1pl_med, "[12th][Inf][1Plt] Helmet (Corpsman)")      \
+  HELM_CH43A(##CAMO##_2pl,     "[12th][Inf][2Plt] Helmet")                 \
+  HELM_CH43A(##CAMO##_2pl_ftl, "[12th][Inf][2Plt] Helmet (FTL)")           \
+  HELM_CH43A(##CAMO##_2pl_sl,  "[12th][Inf][2Plt] Helmet (SL)")            \
+  HELM_CH43A(##CAMO##_2pl_psg, "[12th][Inf][2Plt] Helmet (PSG)")           \
+  HELM_CH43A(##CAMO##_2pl_pl,  "[12th][Inf][2Plt] Helmet (PL)")            \
+  HELM_CH43A(##CAMO##_2pl_med, "[12th][Inf][2Plt] Helmet (Corpsman)")      \
+  HELM_CH43A(##CAMO##_hq,      "[12th][Inf][HQ] Helmet")                   \
+  HELM_CH43A(##CAMO##_hq_ftl,  "[12th][Inf][HQ] Helmet (FTL)")             \
+  HELM_CH43A(##CAMO##_hq_sl,   "[12th][Inf][HQ] Helmet (SL)")              \
+  HELM_CH43A(##CAMO##_hq_psg,  "[12th][Inf][HQ] Helmet (PSG)")             \
+  HELM_CH43A(##CAMO##_hq_pl,   "[12th][Inf][HQ] Helmet (PL)")              \
+  HELM_CH43A(##CAMO##_hq_med,  "[12th][Inf][HQ] Helmet (Corpsman)")        \
+  HELM_CH43A(##CAMO##_lpl,     "[12th][Inf][Logi] Helmet")                 \
+  HELM_CH43A(##CAMO##_lpl_ftl, "[12th][Inf][Logi] Helmet (FTL)")           \
+  HELM_CH43A(##CAMO##_lpl_sl,  "[12th][Inf][Logi] Helmet (SL)")            \
+  HELM_CH43A(##CAMO##_lpl_psg, "[12th][Inf][Logi] Helmet (PSG)")           \
+  HELM_CH43A(##CAMO##_lpl_pl,  "[12th][Inf][Logi] Helmet (PL)")            \
+  HELM_CH43A(##CAMO##_lpl_med, "[12th][Inf][Logi] Helmet (Corpsman)")      \
   HELM_SV(##CAMO##,         "[12th][Inf] Helmet")                       \
   HELM_SV(##CAMO##_med,     "[12th][Inf] Helmet (Corpsman)")            \
   HELM_SV(##CAMO##_1pl,     "[12th][Inf][1Plt] Helmet")                 \
@@ -328,7 +379,7 @@ class twelfth_helm_##CSFX## {            \
 
 #define HELM_CH43A_GI(CSFX,CAMO,EL,ROLE)  \
 class twelfth_helmCH43A_##CSFX## {              \
-  model="twelfth_helmCH43A_base";            \
+  model="twelfth_base_ch43a";            \
   camo=#CAMO;                       	  \
   element=#EL;                     		   \
   role=#ROLE;                      		   \
@@ -390,7 +441,36 @@ class twelfth_helmCH43A_##CSFX## {              \
     HELM_SV_GI(##CAMO##_lpl_psg,##CAMO##,lpl,psg)       \
     HELM_SV_GI(##CAMO##_lpl_pl,##CAMO##,lpl,pl)       \
     HELM_SV_GI(##CAMO##_lpl_med,##CAMO##,lpl,med)       \
+	
+
+
+#define CH43A_HELM_GI(CAMO)       \
 	HELM_CH43A_GI(##CAMO##,##CAMO##,na,na)       \
+    HELM_CH43A_GI(##CAMO##_med,##CAMO##,na,med)        \
+    HELM_CH43A_GI(##CAMO##_1pl,##CAMO##,1pl,na)        \
+    HELM_CH43A_GI(##CAMO##_1pl_ftl,##CAMO##,1pl,ftl)       \
+    HELM_CH43A_GI(##CAMO##_1pl_sl,##CAMO##,1pl,sl)       \
+    HELM_CH43A_GI(##CAMO##_1pl_psg,##CAMO##,1pl,psg)       \
+    HELM_CH43A_GI(##CAMO##_1pl_pl,##CAMO##,1pl,pl)       \
+    HELM_CH43A_GI(##CAMO##_1pl_med,##CAMO##,1pl,med)       \
+    HELM_CH43A_GI(##CAMO##_2pl,##CAMO##,2pl,na)        \
+    HELM_CH43A_GI(##CAMO##_2pl_ftl,##CAMO##,2pl,ftl)       \
+    HELM_CH43A_GI(##CAMO##_2pl_sl,##CAMO##,2pl,sl)       \
+    HELM_CH43A_GI(##CAMO##_2pl_psg,##CAMO##,2pl,psg)       \
+    HELM_CH43A_GI(##CAMO##_2pl_pl,##CAMO##,2pl,pl)       \
+    HELM_CH43A_GI(##CAMO##_2pl_med,##CAMO##,2pl,med)       \
+    HELM_CH43A_GI(##CAMO##_hq,##CAMO##,hq,na)        \
+    HELM_CH43A_GI(##CAMO##_hq_ftl,##CAMO##,hq,ftl)       \
+    HELM_CH43A_GI(##CAMO##_hq_sl,##CAMO##,hq,sl)       \
+    HELM_CH43A_GI(##CAMO##_hq_psg,##CAMO##,hq,psg)       \
+    HELM_CH43A_GI(##CAMO##_hq_pl,##CAMO##,hq,pl)       \
+    HELM_CH43A_GI(##CAMO##_hq_med,##CAMO##,hq,med)       \
+    HELM_CH43A_GI(##CAMO##_lpl,##CAMO##,lpl,na)        \
+    HELM_CH43A_GI(##CAMO##_lpl_ftl,##CAMO##,lpl,ftl)       \
+    HELM_CH43A_GI(##CAMO##_lpl_sl,##CAMO##,lpl,sl)       \
+    HELM_CH43A_GI(##CAMO##_lpl_psg,##CAMO##,lpl,psg)       \
+    HELM_CH43A_GI(##CAMO##_lpl_pl,##CAMO##,lpl,pl)       \
+    HELM_CH43A_GI(##CAMO##_lpl_med,##CAMO##,lpl,med)       \
 	
 
 #define CAP_B(SUFFIX,DISPLAY)                         \

@@ -303,6 +303,7 @@ class CfgWeapons {
   class OPTRE_UNSC_Dress_Uniform_gray;
   class U_B_CombatUniform_mcam_tshirt;
   class TCP_H_Helmet_CH43A_Base;
+  class TCP_V_M43A_BaseSec_1_Base;
   // Base uniform item for new-gen armor
   class twelfth_uni_ng_base_wep: Uniform_Base {
     author="Waylen";
@@ -507,7 +508,7 @@ class CfgWeapons {
     picture="";
     class ItemInfo: HeadgearItem {
       uniformModel="A3\Characters_F\Common\headgear_helmet_heli";
-      mass=30;
+      mass=80;
       modelSides[]={3,1};
       passThrough=0.1;
       class HitpointsProtectionInfo {
@@ -576,6 +577,38 @@ class XtdGearModels {
         class forest {label="Standard"; image=XTP(forest);};
         class std {label = "MARPAT"; image=XTP(std);};
 		class desert {label = "Desert"; image=XTP(desert);};
+      };
+    };
+
+    class twelfth_base_ch43a {
+      label="12th Infantry Helmets";
+      options[] = {"camo","element","role"};
+      class camo {
+        alwaysSelectable = 1;
+        label="Camouflage";
+        values[]={"std"};
+        class std {label="Standard";};
+      };
+      class element {
+        alwaysSelectable = 1;
+        label="Element";
+        values[]={"na","hq","1pl","2pl","lpl"};
+        class na  {label="None";};
+        class hq  {label="HQ";  image=XTP(athena);};
+        class 1pl {label="1PLT";image=XTP(1pl);};
+        class 2pl {label="2PLT";image=XTP(2pl);};
+        class lpl {label="LOGI";image=XTP(chaos);};
+      };
+      class role {
+        alwaysSelectable = 1;
+        label="MOS";
+        values[]={"na","med","ftl","sl","pl","psg"};
+        class na  {label="None";     image=XTP(role);};
+        class pl  {label="PLT LDR";  image=XTP(role_pl);};
+        class psg {label="PLT SGT";  image=XTP(role_psg);};
+        class ftl {label="FTL";      image=XTP(role_ftl);};
+        class sl  {label="SQD LDR";  image=XTP(role_sl);};
+        class med {label="Corpsman"; image=XTP(med);};
       };
     };
 
@@ -652,7 +685,7 @@ class XtdGearModels {
   };
 };
 
-/* class XtdGearInfos {
+class XtdGearInfos {
   class CfgWeapons {
     // THIS IS WHERE EXTENDED ARSENAL PULLS INFO FOR THE SELECTIONS FROM
     //-------------------------------------- Uniforms
@@ -677,8 +710,8 @@ class XtdGearModels {
     //-------------------------------------- Helmets 
 
     ALL_HELM_GI(std)
+	CH43A_HELM_GI(std)
     //ALL_HELM_GI(drk)
 
   };
 };
- */
