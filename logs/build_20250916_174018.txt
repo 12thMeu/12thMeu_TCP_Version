@@ -1,0 +1,46 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250916174018
+Username: KISHI\AlexM
+RunAs User: KISHI\AlexM
+Configuration Name: 
+Machine: KISHI (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'E:\12Th MEU\Modupload\12thMeu_TCP_Version\build.ps1'
+Process ID: 76072
+PSVersion: 5.1.19041.6328
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6328
+BuildVersion: 10.0.19041.6328
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS: Desktop 5.1.19041.6328
+Arch: AMD64
+ScriptRoot: E:\12Th MEU\Modupload\12thMeu_TCP_Version
+HEMTT: E:\12Th MEU\Modupload\12thMeu_TCP_Version\tools\hemtt.exe
+Include: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include
+Out: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons
+ERROR:
+
+
+PSMessageDetails      :
+Exception             : System.Management.Automation.RuntimeException: HEMTT failed with exit code 1.
+TargetObject          : HEMTT failed with exit code 1.
+CategoryInfo          : OperationStopped: (HEMTT failed with exit code 1.:String) [], RuntimeException
+FullyQualifiedErrorId : HEMTT failed with exit code 1.
+ErrorDetails          :
+InvocationInfo        : System.Management.Automation.InvocationInfo
+ScriptStackTrace      : at <ScriptBlock>, E:\12Th MEU\Modupload\12thMeu_TCP_Version\build.ps1: line 48
+                        at <ScriptBlock>, <No file>: line 1
+PipelineIterationInfo : {}
+
+
+
+At: E:\12Th MEU\Modupload\12thMeu_TCP_Version\build.ps1:48
+Line: throw "HEMTT failed with exit code $($proc.ExitCode)."
+**********************
+Windows PowerShell transcript end
+End time: 20250916174020
+**********************

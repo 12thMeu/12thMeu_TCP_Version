@@ -304,7 +304,8 @@ class CfgWeapons {
   class U_B_CombatUniform_mcam_tshirt;
   class TCP_H_Helmet_CH43A_Base;
   class TCP_V_M43A_BaseSec_1_Base;
-  // Base uniform item for new-gen armor
+  class OPTRE_UNSC_CH252A_Helmet_Base;
+  class OPTRE_UNSC_CH252A_Helmet_dp;  // Base uniform item for new-gen armor
   class twelfth_uni_ng_base_wep: Uniform_Base {
     author="Waylen";
     scope=0;

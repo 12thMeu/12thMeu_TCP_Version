@@ -30,7 +30,7 @@ class CfgPatches {
   class twelfth_vests {
     units[]= {}; // We’re not defining placeable units in this PBO.
     weapons[]= { 
-      "twelfth_invis_vest"
+      "twelfth_invis_vest","twelfth_M43A_Light_base_wep"
         /*
           If you create more vests that are stand-alone (not just variants),
           add them here so the engine recognizes them as part of this mod.
@@ -62,25 +62,22 @@ class CfgVehicles {
 // -----------------------------------------------------------------------------
 //  CfgWeapons (Primary location for vest definitions)
 // -----------------------------------------------------------------------------
-class CfgWeapons {
-  /*
-    Pre-declare any base classes we are going to inherit from. 
-    For example, "ItemCore" is the standard base class for all vests in Arma.
-  */
+class CfgWeapons
+{
   class ItemCore;
   class VestItem;
   class OPTRE_UNSC_M52A_Armor2_MAR;
-  class TCP_V_M43A_Light_Black;
-  class TCP_V_M43A_BaseSec_1_Black;
-  class TCP_V_M43A_BaseSec_2_Black;
-  class TCP_V_M43A_BaseSec_3_Black;
-  class TCP_V_M43A_GungnirS_1_Black;
-  class TCP_V_M43A_GungnirS_2_Black;
-  class TCP_V_M43A_GungnirS_3_Black;
-  class TCP_V_M43A_GungnirL_1_Black;
-  class TCP_V_M43A_GungnirL_2_Black;
-  class TCP_V_M43A_GungnirL_3_Black;
-  
+	NEW_VEST(BaseSec_1)
+	NEW_VEST(BaseSec_2)
+	NEW_VEST(BaseSec_3)
+	NEW_VEST(GungnirS_1)
+	NEW_VEST(GungnirS_2)
+	NEW_VEST(GungnirS_3)
+	NEW_VEST(GungnirL_1)
+	NEW_VEST(GungnirL_2)
+	NEW_VEST(GungnirL_3)
+	NEW_VEST(Light)
+
     /*
       This is an OPTRE (Operation: Trebuchet) base class used
       purely as an inheritance reference for the invisible vest. 
@@ -107,7 +104,7 @@ class CfgWeapons {
     // Use the vest macro to set container capacity, mass, and hitpoint info.
     UNSCF_VEST_ITEM_INFO("",default)
   };
-
+  
   // ---------------------------------------------------------------------------
   //  Invisible Vest
   // ---------------------------------------------------------------------------
@@ -160,124 +157,186 @@ class CfgWeapons {
     //-New Armour-----------------------------------------------------
   
     // Base uniform item for new-gen armor
-  class twelfth_M43A_Light_base_wep : TCP_V_M43A_Light_Black {
-    author="Sammy";
-    scope=2;
-    scopeArsenal=2;
-    displayName="[12th] Armor Base Vest";
-    ACE_GForceCoef=0.4;
-	class TCP_uniformDecals
-	{
-		decalColor = "white";
-		selectionAffiliation = "";
-		selectionBloodType = "";
-		selectionName = "nameM43A";
-		selectionRank = "rankM43A";
-	};
-	hiddenSelections[] = {"camo","decals"};
-    class ItemInfo: ItemInfo {
-      containerClass="Supply100";
-	  VEST_HITPOINT_INFO 
+	
+	
+  class twelfth_M43A_Light_base_wep: TCP_V_M43A_Light_Black
+  {
+    scope = 2;
+    scopeArsenal = 2;
+    author = "Sammy";
+    displayName = "[12th] Armor Base Vest";
+    ACE_GForceCoef = 0.4;
+    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_Light.p3d";
+    hiddenSelections[] = {"camo","decals"};
+    class ItemInfo: VestItem
+    {
+      containerClass = "Supply100";
+      mass = 80;
+      VEST_HITPOINT_INFO 
+			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_Light.p3d";
     };
+	hiddenSelectionsTextures[] = {"\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_01_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\white\vest_M43_DecalSheet_CA.paa"};
   };
-/*     class twelfth_M43A_BaseSec1_base_wep: TCP_V_M43A_BaseSec_1_Black {
-    author="Sammy";
-    scope=2;
-    scopeArsenal=2;
-    displayName="[12th] Armor Base Security 1";
-    ACE_GForceCoef=0.4;
-    class ItemInfo: ItemInfo {
-      containerClass="Supply100";
-	  VEST_HITPOINT_INFO 
+
+	class twelfth_M43A_BaseSec1_base_wep: TCP_V_M43A_BaseSec_1_Black {
+    scope = 2;
+    scopeArsenal = 2;
+    author = "Sammy";
+    displayName = "[12th] Armor Base Vest";
+    ACE_GForceCoef = 0.4;
+    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_1.p3d";
+		hiddenSelections[] = {"camo","camo1","decals"};
+    class ItemInfo: VestItem
+    {
+      containerClass = "Supply100";
+      mass = 80;
+      VEST_HITPOINT_INFO 
+			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_1.p3d";
     };
+		hiddenSelectionsTextures[] = {"\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_01_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_Shoulders_BaseSecurity_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\white\vest_M43_DecalSheet_CA.paa"};
   };
+
     class twelfth_M43A_BaseSec2_base_wep: TCP_V_M43A_BaseSec_2_Black {
-    author="Sammy";
-    scope=2;
-    scopeArsenal=2;
-    displayName="[12th] Armor Base Security 2";
-    ACE_GForceCoef=0.4;
-    class ItemInfo: ItemInfo {
-      containerClass="Supply100";
-	  VEST_HITPOINT_INFO 
+    scope = 2;
+    scopeArsenal = 2;
+    author = "Sammy";
+    displayName = "[12th] Armor Base Vest";
+    ACE_GForceCoef = 0.4;
+    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_2.p3d";
+		hiddenSelections[] = {"camo","camo1","camo2","decals"};
+    class ItemInfo: VestItem
+    {
+      containerClass = "Supply100";
+      mass = 80;
+      VEST_HITPOINT_INFO 
+			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_2.p3d";
     };
+		hiddenSelectionsTextures[] = {"\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_01_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_Shoulders_BaseSecurity_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_02_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\white\vest_M43_DecalSheet_CA.paa"};
   };
+
     class twelfth_M43A_BaseSec3_base_wep: TCP_V_M43A_BaseSec_3_Black {
-    author="Sammy";
-    scope=2;
-    scopeArsenal=2;
-    displayName="[12th] Armor Base Security 3";
-    ACE_GForceCoef=0.4;
-    class ItemInfo: ItemInfo {
-      containerClass="Supply100";
-	  VEST_HITPOINT_INFO 
+    scope = 2;
+    scopeArsenal = 2;
+    author = "Sammy";
+    displayName = "[12th] Armor Base Vest";
+    ACE_GForceCoef = 0.4;
+    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_3.p3d";
+    hiddenSelections[] = {"camo","camo1","camo2","decals"};
+    class ItemInfo: VestItem
+    {
+      containerClass = "Supply100";
+      mass = 80;
+      VEST_HITPOINT_INFO 
+			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_3.p3d";
     };
+		hiddenSelectionsTextures[] = {"\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_01_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_Shoulders_BaseSecurity_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_02_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\white\vest_M43_DecalSheet_CA.paa"};
   };
+
     class twelfth_M43A_Gungnir1_base_wep: TCP_V_M43A_GungnirS_1_Black {
-    author="Sammy";
-    scope=2;
-    scopeArsenal=2;
-    displayName="[12th] Armor Gungnir Small 1";
-    ACE_GForceCoef=0.4;
-    class ItemInfo: ItemInfo {
-      containerClass="Supply100";
-	  VEST_HITPOINT_INFO 
+    scope = 2;
+    scopeArsenal = 2;
+    author = "Sammy";
+    displayName = "[12th] Armor Base Vest";
+    ACE_GForceCoef = 0.4;
+    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirS_1.p3d";
+		hiddenSelections[] = {"camo","camo1","camo2","decals"};
+    class ItemInfo: VestItem
+    {
+      containerClass = "Supply100";
+      mass = 80;
+      VEST_HITPOINT_INFO 
+			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirS_1.p3d";
     };
+		hiddenSelectionsTextures[] = {"\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_01_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_Shoulders_Gungnir_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\white\vest_M43_DecalSheet_CA.paa"};
   };
+
   class twelfth_M43A_Gungnir2_base_wep: TCP_V_M43A_GungnirS_2_Black {
-    author="Sammy";
-    scope=2;
-    scopeArsenal=2;
-    displayName="[12th] Armor Gungnir Small 2";
-    ACE_GForceCoef=0.4;
-    class ItemInfo: ItemInfo {
-      containerClass="Supply100";
-	  VEST_HITPOINT_INFO 
+    scope = 2;
+    scopeArsenal = 2;
+    author = "Sammy";
+    displayName = "[12th] Armor Base Vest";
+    ACE_GForceCoef = 0.4;
+    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BGungnirS_2.p3d";
+		hiddenSelections[] = {"camo","camo1","camo2","decals"};
+    class ItemInfo: VestItem
+    {
+      containerClass = "Supply100";
+      mass = 80;
+      VEST_HITPOINT_INFO 
+			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirS_2.p3d";
     };
+		hiddenSelectionsTextures[] = {"\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_01_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_Shoulders_Gungnir_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_02_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\white\vest_M43_DecalSheet_CA.paa"};
   };
+
   class twelfth_M43A_Gungnir3_base_wep: TCP_V_M43A_GungnirS_3_Black {
-    author="Sammy";
-    scope=2;
-    scopeArsenal=2;
-    displayName="[12th] Armor Gungnir Small 3";
-    ACE_GForceCoef=0.4;
-    class ItemInfo: ItemInfo {
-      containerClass="Supply100";
-	  VEST_HITPOINT_INFO 
+    scope = 2;
+    scopeArsenal = 2;
+    author = "Sammy";
+    displayName = "[12th] Armor Base Vest";
+    ACE_GForceCoef = 0.4;
+    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirS_3.p3d";
+		hiddenSelections[] = {"camo","camo1","camo2","decals"};
+    class ItemInfo: VestItem
+    {
+      containerClass = "Supply100";
+      mass = 80;
+      VEST_HITPOINT_INFO 
+			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirS_3.p3d";
     };
+		hiddenSelectionsTextures[] = {"\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_01_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_Shoulders_Gungnir_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_02_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\white\vest_M43_DecalSheet_CA.paa"};
   };
+
    class twelfth_M43A_GungnirL1_base_wep: TCP_V_M43A_GungnirL_1_Black {
-    author="Sammy";
-    scope=2;
-    scopeArsenal=2;
-    displayName="[12th] Armor Gungnir Large 1";
-    ACE_GForceCoef=0.4;
-    class ItemInfo: ItemInfo {
-      containerClass="Supply100";
-	  VEST_HITPOINT_INFO 
+    scope = 2;
+    scopeArsenal = 2;
+    author = "Sammy";
+    displayName = "[12th] Armor Base Vest";
+    ACE_GForceCoef = 0.4;
+    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_1.p3d";
+		hiddenSelections[] = {"camo","camo1","decals"};
+    class ItemInfo: VestItem
+    {
+      containerClass = "Supply100";
+      mass = 80;
+      VEST_HITPOINT_INFO 
+			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_1.p3d";
     };
+		hiddenSelectionsTextures[] = {"\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_01_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_Shoulders_Gungnir_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\white\vest_M43_DecalSheet_CA.paa"};
   };
+
     class twelfth_M43A_GungnirL2_base_wep: TCP_V_M43A_GungnirL_2_Black {
-    author="Sammy";
-    scope=2;
-    scopeArsenal=2;
-    displayName="[12th] Armor Gungnir Large 2";
-    ACE_GForceCoef=0.4;
-    class ItemInfo: ItemInfo {
-      containerClass="Supply100";
-	  VEST_HITPOINT_INFO 
+    scope = 2;
+    scopeArsenal = 2;
+    author = "Sammy";
+    displayName = "[12th] Armor Base Vest";
+    ACE_GForceCoef = 0.4;
+    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_2.p3d";
+			hiddenSelections[] = {"camo","camo1","camo2","decals"};
+    class ItemInfo: VestItem
+    {
+      containerClass = "Supply100";
+      mass = 80;
+      VEST_HITPOINT_INFO 
+			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_2.p3d";
     };
-  };
-    class twelfth_M43A_GungnirL3_base_wep: TCP_V_M43A_GungnirL_3_Black {
-    author="Sammy";
-    scope=2;
-    scopeArsenal=2;
-    displayName="[12th] Armor Gungnir Large 3";
-    ACE_GForceCoef=0.4;
-    class ItemInfo: ItemInfo {
-      containerClass="Supply100";
-	  VEST_HITPOINT_INFO 
-    };
-  }; */
+		hiddenSelectionsTextures[] = {"\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_01_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_Shoulders_Gungnir_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_02_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\white\vest_M43_DecalSheet_CA.paa"};
 };
 
+    class twelfth_M43A_GungnirL3_base_wep: TCP_V_M43A_GungnirL_3_Black {
+    scope = 2;
+    scopeArsenal = 2;
+    author = "Sammy";
+    displayName = "[12th] Armor Base Vest";
+    ACE_GForceCoef = 0.4;
+    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_3.p3d";
+		hiddenSelections[] = {"camo","camo1","camo2","decals"};
+    class ItemInfo: VestItem
+    {
+      containerClass = "Supply100";
+      mass = 80;
+      VEST_HITPOINT_INFO 
+			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_3.p3d";
+    };
+		hiddenSelectionsTextures[] = {"\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_01_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_Shoulders_Gungnir_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_02_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\white\vest_M43_DecalSheet_CA.paa"};
+};
+};

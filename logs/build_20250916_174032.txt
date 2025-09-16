@@ -1,0 +1,112 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20250916174032
+Username: KISHI\AlexM
+RunAs User: KISHI\AlexM
+Configuration Name: 
+Machine: KISHI (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command if((Get-ExecutionPolicy ) -ne 'AllSigned') { Set-ExecutionPolicy -Scope Process Bypass }; & 'E:\12Th MEU\Modupload\12thMeu_TCP_Version\build.ps1'
+Process ID: 73392
+PSVersion: 5.1.19041.6328
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6328
+BuildVersion: 10.0.19041.6328
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS: Desktop 5.1.19041.6328
+Arch: AMD64
+ScriptRoot: E:\12Th MEU\Modupload\12thMeu_TCP_Version
+HEMTT: E:\12Th MEU\Modupload\12thMeu_TCP_Version\tools\hemtt.exe
+Include: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include
+Out: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\abc_main.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\abc_main.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\AR_AdvancedRappelling.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\AR_AdvancedRappelling.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\avm224_main.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\avm224_main.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\avm224_mortar.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\avm224_mortar.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\babe_core.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\babe_core.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\babe_em.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\babe_em.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\babe_int.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\babe_int.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\bocr_main.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\bocr_main.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\bridge.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\bridge.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\dzn_MG_Tripod.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\dzn_MG_Tripod.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\dzn_MG_Tripod_A3.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\dzn_MG_Tripod_A3.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\dzn_MG_Tripod_A3_RifleGestures.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\dzn_MG_Tripod_A3_RifleGestures.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\dzn_MG_Tripod_Core.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\dzn_MG_Tripod_Core.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\dzn_Rifle_Tripod.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\dzn_Rifle_Tripod.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\EMOGLOBINSKY.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\EMOGLOBINSKY.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\emr_main.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\emr_main.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\Freefall_Fix.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\Freefall_Fix.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\fscl_main.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\fscl_main.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\grad_trenches_assets.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\grad_trenches_assets.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\grad_trenches_functions.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\grad_trenches_functions.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\grad_trenches_main.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\grad_trenches_main.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\grad_trenches_sounds.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\grad_trenches_sounds.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\Halberd.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\Halberd.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\Helicopter_Turbulence_main.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\Helicopter_Turbulence_main.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\Interior.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\Interior.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\IR_Tents.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\IR_Tents.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\jamming.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\jamming.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\lk_chat.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\lk_chat.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\M3Backpack.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\M3Backpack.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\MAA.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\MAA.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\main.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\main.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\mgsr_poncho.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\mgsr_poncho.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\MusicModPBO.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\MusicModPBO.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\NDS_M224_mortar.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\NDS_M224_mortar.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\nmab.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\nmab.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\PHEN_DoorKick.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\PHEN_DoorKick.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\Plane_Turbulence_main.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\Plane_Turbulence_main.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\PLP_LadderTweakRemastered.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\PLP_LadderTweakRemastered.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\PLP_vtolController.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\PLP_vtolController.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\PZPL_main.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\PZPL_main.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\PZPL_pronelauncher.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\PZPL_pronelauncher.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\rwyl_main.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\rwyl_main.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\SA_AdvancedSlingLoading.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\SA_AdvancedSlingLoading.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\signals.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\signals.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tfar.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tfar.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_animate.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_animate.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_animate_ace.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_animate_ace.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_animate_limit.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_animate_limit.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_animate_radio.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_animate_radio.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_animate_stiff.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_animate_stiff.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_animate_walk.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_animate_walk.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_breach.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_breach.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_breach_block.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_breach_block.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_breach_linear.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_breach_linear.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_breach_package.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_breach_package.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_breach_popper.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_breach_popper.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_breach_shock.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_breach_shock.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_breach_silhouette.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_breach_silhouette.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_breach_stick.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_breach_stick.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_core.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_core.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_flashbang.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_flashbang.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_3cb.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_3cb.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_ak.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_ak.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_fireaxe.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_fireaxe.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_gavel.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_gavel.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_halligan.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_halligan.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_kabar.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_kabar.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_kitchen.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_kitchen.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_m9.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_m9.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_moveset.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_moveset.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_mpl50.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_mpl50.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_okc.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_okc.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_sledge.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_sledge.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_socp.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_socp.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_sog.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_sog.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_sogpf.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_sogpf.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_splittingaxe.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_splittingaxe.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\tsp_melee_training.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\tsp_melee_training.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\Turret_Enhanced.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\Turret_Enhanced.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\universal_uniforms.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\universal_uniforms.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\Zab_splendid_smoke.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\Zab_splendid_smoke.pbo".
+VERBOSE: Performing the operation "Copy File" on target "Item: E:\12Th MEU\Modupload\12thMeu_TCP_Version\pbo_include\zeus.pbo Destination: E:\12Th MEU\Modupload\12thMeu_TCP_Version\.hemttout\build\addons\zeus.pbo".
+Files copied successfully!
+**********************
+Windows PowerShell transcript end
+End time: 20250916174044
+**********************
