@@ -29,6 +29,22 @@
 #define VEST_MASS 80      // The vest’s "mass" for ACE/Arma calculations
 #define VEST_MAXLOAD 200  // The vest’s carrying capacity (in “inventory units”)
 
+
+
+/* New vest stuff */
+//Common texture paths
+#define HELM_DEC_PATH "tcp\characters\BLUFOR\UNSC\ARMY\Vests\M43A\data\camo\White\vest_M43_DecalSheet_CA.paa"
+#define VEST_PATH_01 "tcp\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_01_CO.paa"
+#define GUNGNIR_PATH "tcp\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_Shoulders_Gungnir_CO.paa"
+#define VEST_PATH_02 "tcp\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_M43A_02_CO.paa"
+#define BASESEC_PATH "tcp\Characters\BLUFOR\UNSC\Army\Vests\M43A\data\camo\Black\vest_Shoulders_BaseSecurity_CO.paa"
+
+#define NEW_VEST(ARMOUR) 						\
+  class TCP_V_M43A_##ARMOUR##_Black: ItemCore { \
+    class ItemInfo;								\
+  };
+
+
 // Macro for the hitpoint data applied to vests
 #define VEST_HITPOINT_INFO       \
 class HitpointsProtectionInfo {  \
@@ -164,9 +180,3 @@ UNSCF_VEST(GLUE(BC,_gr_c2l)  ,CAMO,GRENADIER_CHEST2_LEG_SEL,       Q(GLUE(BD, Gr
 UNSCF_VEST(GLUE(BC,_gr_c2h)  ,CAMO,GRENADIER_CHEST2_HEAVY_SEL,     Q(GLUE(BD, Grenadier Vest (Heavy & Partial Chest Pouches))))       \
 UNSCF_VEST(GLUE(BC,_gr_c2hl) ,CAMO,GRENADIER_CHEST2_HEAVY_LEG_SEL, Q(GLUE(BD, Grenadier Vest (Heavy & Partial Chest & Leg Pouches)))) \
 
-
-//Defining new vests classes
-#define NEW_VEST(ARMOUR) 						\
-  class TCP_V_M43A_##ARMOUR##_Black: ItemCore { \
-    class ItemInfo;								\
-  };
