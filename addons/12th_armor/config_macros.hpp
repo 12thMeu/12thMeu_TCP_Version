@@ -46,7 +46,98 @@ class twelfth_uni_##CAMO##_##PLATOON##_##ROLE##_wep {     \
   element=#PLATOON;                                       \
   role=#ROLE;                                             \
   visor="No";                                             \
-};                                                        \
+};                                                        
+
+/* New uniform gear info */
+#define NORMAL(CAMO,SHIRT,SLEEVE)                          \
+  class TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_##CAMO## {       \
+    model="twelfth_new_uniforms";                          \
+    camo=#CAMO;                                            \
+    sleeve=#SLEEVE;                                        \
+    glove="no";                                            \
+    shirt=#SHIRT;                                          \
+    blouse="noblouse";                                     \
+    zip="zipped";                                          \
+  };                                                       \
+
+#define BLOUSED(CAMO,SHIRT,SLEEVE)           \
+  class TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Bloused_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                             \
+    sleeve=#SLEEVE;                     \
+    glove="no";                     \
+    shirt=#SHIRT;                    \
+    blouse="blouse";                \
+    zip="zipped";                                         \
+  };                      
+
+#define GLOVES(CAMO,SHIRT,SLEEVE)           \
+  class TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                             \
+    sleeve=#SLEEVE;                     \
+    glove="yes";                     \
+    shirt=#SHIRT;                    \
+    blouse="noblouse";                \
+    zip="zipped";                                         \
+  };                                 
+
+#define BLOUSED_GLOVES(CAMO,SHIRT,SLEEVE)           \
+  class TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_Bloused_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                             \
+    sleeve=#SLEEVE;                     \
+    glove="yes";                     \
+    shirt=#SHIRT;                    \
+    blouse="blouse";                \
+    zip="zipped";                                         \
+  };                 
+
+#define UNZIPPED(CAMO,SHIRT,SLEEVE)           \
+  class TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Unzipped_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                             \
+    sleeve=#SLEEVE;                     \
+    glove="no";                     \
+    shirt=#SHIRT;                    \
+    blouse="blouse";                \
+    zip="unzipped";                                         \
+  };                             
+
+#define BLOUSED_UNZIPPED(CAMO,SHIRT,SLEEVE)           \
+  class TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Bloused_Unzipped_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                             \
+    sleeve=#SLEEVE;                     \
+    glove="no";                     \
+    shirt=#SHIRT;                    \
+    blouse="blouse";                \
+    zip="unzipped";                                         \
+  };                           
+
+#define GLOVES_UNZIPPED(CAMO,SHIRT,SLEEVE)           \
+  class TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_Unzipped_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                             \
+    sleeve=#SLEEVE;                     \
+    glove="yes";                     \
+    shirt=#SHIRT;                    \
+    blouse="noblouse";                \
+    zip="unzipped";                                         \
+  };                                    
+
+
+#define GLOVES_BLOUSED_UNZIPPED(CAMO,SHIRT,SLEEVE)           \
+  class TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_Bloused_Unzipped_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                                              \
+    sleeve=#SLEEVE;                                         \
+    glove="yes";                                             \
+    shirt=#SHIRT;                                            \
+    blouse="blouse";                                        \
+    zip="unzipped";                                         \
+  };                                    
+
 
 
 // LATER ME NOTE
@@ -149,6 +240,91 @@ UNIFORM_GI(CAMO,hq,na)        \
 UNIFORM_GI(CAMO,hq,med)       \
 UNIFORM_GI(CAMO,lpl,na)       \
 UNIFORM_GI(CAMO,lpl,med)      \
+
+#define NEW_UNIFROM_GI(CAMO)                        \
+  NORMAL(CAMO,TShirt,Tucked)                       \
+  NORMAL(CAMO,TShirt,Untucked)                       \
+  NORMAL(CAMO,FieldTop,Full)                       \
+  NORMAL(CAMO,FieldTop,HalfRoll)                       \
+  NORMAL(CAMO,FieldTop,QuarterRoll)                       \
+  NORMAL(CAMO,FieldTop,SlimSleeve)                       \
+  NORMAL(CAMO,TacShirt,Full)                       \
+  NORMAL(CAMO,TacShirt,HalfRoll)                       \
+  NORMAL(CAMO,TacShirt,QuarterRoll)                       \
+  NORMAL(CAMO,TacShirt,SlimSleeve)                       \
+  BLOUSED(CAMO,TShirt,Tucked)                       \
+  BLOUSED(CAMO,TShirt,UnTucked)                       \
+  BLOUSED(CAMO,FieldTop,Full)                       \
+  BLOUSED(CAMO,FieldTop,HalfRoll)                       \
+  BLOUSED(CAMO,FieldTop,QuarterRoll)                       \
+  BLOUSED(CAMO,FieldTop,SlimSleeve)                       \
+  BLOUSED(CAMO,TacShirt,Full)                       \
+  BLOUSED(CAMO,TacShirt,HalfRoll)                       \
+  BLOUSED(CAMO,TacShirt,QuarterRoll)                       \
+  BLOUSED(CAMO,TacShirt,SlimSleeve)                       \
+  GLOVES(CAMO,TShirt,Tucked)                       \
+  GLOVES(CAMO,TShirt,UnTucked)                       \
+  GLOVES(CAMO,FieldTop,Full)                       \
+  GLOVES(CAMO,FieldTop,HalfRoll)                       \
+  GLOVES(CAMO,FieldTop,QuarterRoll)                       \
+  GLOVES(CAMO,FieldTop,SlimSleeve)                       \
+  GLOVES(CAMO,TacShirt,Full)                       \
+  GLOVES(CAMO,TacShirt,HalfRoll)                       \
+  GLOVES(CAMO,TacShirt,QuarterRoll)                       \
+  GLOVES(CAMO,TacShirt,SlimSleeve)                       \
+  BLOUSED_GLOVES(CAMO,TShirt,Tucked)                       \
+  BLOUSED_GLOVES(CAMO,TShirt,UnTucked)                       \
+  BLOUSED_GLOVES(CAMO,FieldTop,Full)                       \
+  BLOUSED_GLOVES(CAMO,FieldTop,HalfRoll)                       \
+  BLOUSED_GLOVES(CAMO,FieldTop,QuarterRoll)                       \
+  BLOUSED_GLOVES(CAMO,FieldTop,SlimSleeve)                       \
+  BLOUSED_GLOVES(CAMO,TacShirt,Full)                       \
+  BLOUSED_GLOVES(CAMO,TacShirt,HalfRoll)                       \
+  BLOUSED_GLOVES(CAMO,TacShirt,QuarterRoll)                       \
+  BLOUSED_GLOVES(CAMO,TacShirt,SlimSleeve)                       \
+  UNZIPPED(CAMO,TShirt,Tucked)                       \
+  UNZIPPED(CAMO,TShirt,UnTucked)                       \
+  UNZIPPED(CAMO,FieldTop,Full)                       \
+  UNZIPPED(CAMO,FieldTop,HalfRoll)                       \
+  UNZIPPED(CAMO,FieldTop,QuarterRoll)                       \
+  UNZIPPED(CAMO,FieldTop,SlimSleeve)                       \
+  UNZIPPED(CAMO,TacShirt,Full)                       \
+  UNZIPPED(CAMO,TacShirt,HalfRoll)                       \
+  UNZIPPED(CAMO,TacShirt,QuarterRoll)                       \
+  UNZIPPED(CAMO,TacShirt,SlimSleeve)                       \
+  BLOUSED_UNZIPPED(CAMO,TShirt,Tucked)                       \
+  BLOUSED_UNZIPPED(CAMO,TShirt,UnTucked)                       \
+  BLOUSED_UNZIPPED(CAMO,FieldTop,Full)                       \
+  BLOUSED_UNZIPPED(CAMO,FieldTop,HalfRoll)                       \
+  BLOUSED_UNZIPPED(CAMO,FieldTop,QuarterRoll)                       \
+  BLOUSED_UNZIPPED(CAMO,FieldTop,SlimSleeve)                       \
+  BLOUSED_UNZIPPED(CAMO,TacShirt,Full)                       \
+  BLOUSED_UNZIPPED(CAMO,TacShirt,HalfRoll)                       \
+  BLOUSED_UNZIPPED(CAMO,TacShirt,QuarterRoll)                       \
+  BLOUSED_UNZIPPED(CAMO,TacShirt,SlimSleeve)                       \
+  GLOVES_UNZIPPED(CAMO,TShirt,Tucked)                       \
+  GLOVES_UNZIPPED(CAMO,TShirt,UnTucked)                                     \
+  GLOVES_UNZIPPED(CAMO,FieldTop,Full)                                       \
+  GLOVES_UNZIPPED(CAMO,FieldTop,HalfRoll)                                   \
+  GLOVES_UNZIPPED(CAMO,FieldTop,QuarterRoll)                                \
+  GLOVES_UNZIPPED(CAMO,FieldTop,SlimSleeve)                                 \
+  GLOVES_UNZIPPED(CAMO,TacShirt,Full)                                       \
+  GLOVES_UNZIPPED(CAMO,TacShirt,HalfRoll)                                   \
+  GLOVES_UNZIPPED(CAMO,TacShirt,QuarterRoll)                                \
+  GLOVES_UNZIPPED(CAMO,TacShirt,SlimSleeve)                                 \
+  GLOVES_BLOUSED_UNZIPPED(CAMO,TShirt,Tucked)                               \
+  GLOVES_BLOUSED_UNZIPPED(CAMO,TShirt,UnTucked)                             \
+  GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,Full)                               \
+  GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,HalfRoll)                           \
+  GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,QuarterRoll)                        \
+  GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,SlimSleeve)                         \
+  GLOVES_BLOUSED_UNZIPPED(CAMO,TacShirt,Full)                               \
+  GLOVES_BLOUSED_UNZIPPED(CAMO,TacShirt,HalfRoll)                           \
+  GLOVES_BLOUSED_UNZIPPED(CAMO,TacShirt,QuarterRoll)                        \
+  GLOVES_BLOUSED_UNZIPPED(CAMO,TacShirt,SlimSleeve)                         \
+
+
+
 
 /*
   Defines a no-visor helmet.
@@ -489,6 +665,27 @@ a local copy of the base textures from UNSCF around here.
 */
 
 /*
+New macro for the new uniforms
+
+#define UNI_NV_GI(CSFX,CAMO,EL,ROLE) \
+class twelfth_helm_##CSFX##_nv {         \
+  model="twelfth_base_helms";            \
+  camo=#CAMO;                         \
+  element=#EL;                        \
+  role=#ROLE;                         \
+  visor="No";                         \
+};
+
+
+*/
+
+
+
+
+
+
+
+/*
   A Macro for the IAHDS Pilot helmet.
   Input:
   * SUFFIX - A class name suffix, to avoid clashing.
@@ -497,7 +694,7 @@ a local copy of the base textures from UNSCF around here.
                    hidden selection is going to be pulling from.
 */
 #define PILOT_HELM(SUFFIX,DISPLAY,C1,C2,C3,C4,C5)                         \
-class twelfth_pilot_h_##SUFFIX : H_HelmetB {                                 \
+  class twelfth_pilot_h_##SUFFIX : H_HelmetB {                                 \
   author="Weber";                                                          \
   scope=2;                                                                \
   scopeArsenal=2;                                                         \

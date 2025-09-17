@@ -564,7 +564,7 @@ class XtdGearModels {
         values[] = {"std", "forest","desert"};
         class forest {label="Standard"; image=XTP(forest);};
         class std {label = "MARPAT"; image=XTP(std);};
-		class desert {label = "Desert"; image=XTP(desert);};
+		    class desert {label = "Desert"; image=XTP(desert);};
       };
     };
 
@@ -577,7 +577,7 @@ class XtdGearModels {
         values[] = {"std", "forest","desert"};
         class forest {label="Standard"; image=XTP(forest);};
         class std {label = "MARPAT"; image=XTP(std);};
-		class desert {label = "Desert"; image=XTP(desert);};
+		    class desert {label = "Desert"; image=XTP(desert);};
       };
     };
 
@@ -651,7 +651,59 @@ class XtdGearModels {
     };
 
     // Uniforms
-    class twelfth_base_uniforms {
+    class twelfth_new_uniforms {
+      label="12th New Infantry Uniforms";
+      options[] = {"camo", "sleeve","glove","shirt","blouse","zip"};
+      class camo {
+        alwaysSelectable = 1;
+        label="Camouflage";
+        values[]={"Black"};
+        class Black {label="Black";};
+      };
+      class sleeve {
+        alwaysSelectable = 1;
+        label="Sleeve Type";
+        values[]={"Tucked","Full","QuarterRoll","HalfRoll","SlimSleeve","Untucked"};
+        class Tucked  {label="Tucked";};
+        class Full  {label="Full";};
+        class QuarterRoll {label="Quarter Roll";};
+        class HalfRoll {label="Half Roll";};
+        class SlimSleeve {label="Slim Sleeve";};
+        class Untucked  {label="Untucked";};
+      };
+      class glove {
+        alwaysSelectable = 1;
+        label="Gloves";
+        values[]={"yes","no"};
+        class yes  {label="With Gloves";};
+        class no {label="No Gloves";};
+      };
+      class shirt {
+        alwaysSelectable = 1;
+        label="Shirt Type";
+        values[]={"TShirt","TacShirt","FieldTop"};
+        class TShirt  {label="T-shirt";};
+        class TacShirt {label="Tac-Shirt";};
+        class FieldTop {label="Field Top";};
+      };
+      class blouse {
+        alwaysSelectable=1;
+        label="Blouse Type";
+        values[]={"blouse","noblouse"};
+        class blouse {label="Blouse";};
+        class noblouse {label="No Blouse";};
+      };
+      class zip {
+        alwaysSelectable=1;
+        label="Zipper Type";
+        values[]={"zipped","unzipped"};
+        class zipped {label="Zipped Up";};
+        class unzipped {label="Unzipped";};
+      };
+
+
+    };
+      class twelfth_base_uniforms {
       label="12th Infantry Uniforms";
       options[] = {"camo", "element","role"};
       class camo {
@@ -663,7 +715,7 @@ class XtdGearModels {
         class forest90 {label="Forest90";     image=XTP(forest90);};
         class urban {label="Urban";     image=XTP(urban);}; //maybe winter?? will need to look into new armor pieces
         class drk {label="VBSS";     image=XTP(vbss);};
-		class desert {label="Desert";     image=XTP(desert);};
+	    	class desert {label="Desert";     image=XTP(desert);};
       };
       class element {
         alwaysSelectable = 1;
@@ -695,24 +747,28 @@ class XtdGearInfos {
     ALL_UNI_GI(drk)
     ALL_UNI_GI(forest)
     ALL_UNI_GI(urban)
-	ALL_UNI_GI(desert)
+	  ALL_UNI_GI(desert)
 
     // Boonies
 
     BOONIE_GI(std)
     BOONIE_GI(forest)
-	BOONIE_GI(desert)      
+  	BOONIE_GI(desert)      
 
     // Patrol caps
 
     PATROLCAP_GI(std)
     PATROLCAP_GI(forest)
-	PATROLCAP_GI(desert)
+	  PATROLCAP_GI(desert)
     //-------------------------------------- Helmets 
 
     ALL_HELM_GI(std)
-	CH43A_HELM_GI(std)
+	  CH43A_HELM_GI(std)
     //ALL_HELM_GI(drk)
 
+
+    //-------------------------------------- New uniforms
+    NEW_UNIFROM_GI(Black)
+    
   };
 };
