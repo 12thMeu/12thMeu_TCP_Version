@@ -657,8 +657,20 @@ class XtdGearModels {
       class camo {
         alwaysSelectable = 1;
         label="Camouflage";
-        values[]={"Black"};
+        values[]={"Black","Tan","Grey","White","Arctic","Arid","Green","Olive","Tropic","Tundra","Urban","Woodland"};
         class Black {label="Black";};
+        class Tan {label="Tan";};
+        class Grey {label="Grey";};
+        class White {label="White";};
+        class Arctic {label="Arctic";};
+        class Arid {label="Arid";};
+        class Green {label="Green";};
+        class Olive {label="Olive";};
+        class Tropic {label="Tropic";};
+        class Tundra {label="Tundra";};
+        class Urban {label="Urban";};
+        class Woodland {label="Woodland";};
+
       };
       class sleeve {
         alwaysSelectable = 1;
@@ -769,6 +781,19 @@ class XtdGearInfos {
 
     //-------------------------------------- New uniforms
     NEW_UNIFROM_GI(Black)
+    NEW_UNIFROM_GI(Tan)
+    NEW_UNIFROM_GI(Grey)
+    NEW_UNIFROM_GI(White)
+    NEW_UNIFROM_GI(Arctic)
+    NEW_UNIFROM_GI(Arid)
+    NEW_UNIFROM_GI(Green)
+    NEW_UNIFROM_GI(Olive)
+    NEW_UNIFROM_GI(Tropic)
+    NEW_UNIFROM_GI(Tundra)
+    NEW_UNIFROM_GI(Urban)
+    NEW_UNIFROM_GI(Woodland)
+
+
     
   };
 };
