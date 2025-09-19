@@ -48,6 +48,47 @@ class twelfth_uni_##CAMO##_##PLATOON##_##ROLE##_wep {     \
   visor="No";                                             \
 };                                                        
 
+
+#define VEST_GI(TYPE,CAMO,PLATOON,ROLE)                     \
+class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
+  model="twelfth_base_vests";                          \
+  type=#TYPE;                                            \
+  camo=#CAMO;                                             \
+  element=#PLATOON;                                       \
+  role=#ROLE;                                             \
+};          
+
+//TCP Uniform class definitions
+
+#define NORMAL_WEH(SHIRT,SLEEVE)                          \
+  class TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Black;
+
+
+/*
+#define BLOUSED_WEH(SHIRT,SLEEVE)           \
+  class TCP_B_CBUU_##SHIRT##_##SLEEVE##_Bloused_Base;
+
+#define GLOVES_WEH(SHIRT,SLEEVE)           \
+  class TCP_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_Base;
+
+#define BLOUSED_GLOVES_WEH(SHIRT,SLEEVE)           \
+  class TCP_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_Bloused_Base;
+
+#define UNZIPPED_WEH(SHIRT,SLEEVE)           \
+  class TCP_B_CBUU_##SHIRT##_##SLEEVE##_Unzipped_Base;
+
+#define BLOUSED_UNZIPPED_WEH(SHIRT,SLEEVE)           \
+  class TCP_B_CBUU_##SHIRT##_##SLEEVE##_Bloused_Unzipped_Base;
+
+#define GLOVES_UNZIPPED_WEH(SHIRT,SLEEVE)           \
+  class TCP_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_Unzipped_Base;
+
+
+#define GLOVES_BLOUSED_UNZIPPED_WEH(SHIRT,SLEEVE)           \
+  class TCP_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_Bloused_Unzipped_Base;
+*/
+
+
 /* New uniform gear info */
 #define NORMAL(CAMO,SHIRT,SLEEVE)                          \
   class TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_##CAMO## {       \
@@ -58,7 +99,7 @@ class twelfth_uni_##CAMO##_##PLATOON##_##ROLE##_wep {     \
     shirt=#SHIRT;                                          \
     blouse="noblouse";                                     \
     zip="zipped";                                          \
-  };                                                       \
+  };
 
 #define BLOUSED(CAMO,SHIRT,SLEEVE)           \
   class TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Bloused_##CAMO## {   \
@@ -178,12 +219,92 @@ class twelfth_uni_##CAMO##_##PLATOON##_##ROLE##_veh: twelfth_uni_ng_base_veh{   
 };             
 
 
+/* 12th Uniform class definition */
+
+#define NORMAL_CLASS(CAMO,SHIRT,SLEEVE)                          \
+  class twelfth_uni_##SHIRT##_##SLEEVE##_##CAMO## : TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Black {       \
+    author="Sammy";                                                              \
+    scope=1;                                                                      \
+    scopeArsenal=2;                                                                \
+    hiddenSelectionsTextures[] = {"\TCP\Characters\BLUFOR\UNSC\Army\Uniforms\CBUU\data\camo\White\CBUU_TShirt_CO.paa","\TCP\Characters\BLUFOR\UNSC\Army\Uniforms\CBUU\data\camo\Arctic\CBUU_Pants_CO.paa"}; \
+  };
+
+  /*
+#define BLOUSED_CLASS(CAMO,SHIRT,SLEEVE)           \
+  class twelfth_uni_##SHIRT##_##SLEEVE##_Bloused_##CAMO## : TCP_B_CBUU_##SHIRT##_##SLEEVE##_Bloused_Base {   \
+    author="Sammy";                                                              \
+    scope=1;                                                                      \
+    scopeArsenal=2;                                                                \
+    uniformClass=twelfth_uni_##SHIRT##_##SLEEVE##_Bloused_##CAMO##;                         \
+    hiddenSelectionsTextures[] = {QP(uniforms\uniform\##CAMO\CBUU_##SHIRT##_CO.paa),QP(uniforms\uniform\##CAMO\CBUU_Pants_CO.paa)}; \
+  };
+
+#define GLOVES_CLASS(CAMO,SHIRT,SLEEVE)           \
+  class twelfth_uni_##SHIRT##_##SLEEVE##_Gloves_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                             \
+    sleeve=#SLEEVE;                     \
+    glove="yes";                     \
+    shirt=#SHIRT;                    \
+    blouse="noblouse";                \
+    zip="zipped";                                         \
+  };                                 
+
+#define BLOUSED_GLOVES_CLASS(CAMO,SHIRT,SLEEVE)           \
+  class twelfth_uni_##SHIRT##_##SLEEVE##_Gloves_Bloused_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                             \
+    sleeve=#SLEEVE;                     \
+    glove="yes";                     \
+    shirt=#SHIRT;                    \
+    blouse="blouse";                \
+    zip="zipped";                                         \
+  };                 
+
+#define UNZIPPED_CLASS(CAMO,SHIRT,SLEEVE)           \
+  class twelfth_uni_##SHIRT##_##SLEEVE##_Unzipped_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                             \
+    sleeve=#SLEEVE;                     \
+    glove="no";                     \
+    shirt=#SHIRT;                    \
+    blouse="blouse";                \
+    zip="unzipped";                                         \
+  };                             
+
+#define BLOUSED_UNZIPPED_CLASS(CAMO,SHIRT,SLEEVE)           \
+  class twelfth_uni_##SHIRT##_##SLEEVE##_Bloused_Unzipped_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                             \
+    sleeve=#SLEEVE;                     \
+    glove="no";                     \
+    shirt=#SHIRT;                    \
+    blouse="blouse";                \
+    zip="unzipped";                                         \
+  };                           
+
+#define GLOVES_UNZIPPED_CLASS(CAMO,SHIRT,SLEEVE)           \
+  class twelfth_uni_##SHIRT##_##SLEEVE##_Gloves_Unzipped_##CAMO## {   \
+    model="twelfth_new_uniforms";                           \
+    camo=#CAMO;                             \
+    sleeve=#SLEEVE;                     \
+    glove="yes";                     \
+    shirt=#SHIRT;                    \
+    blouse="noblouse";                \
+    zip="unzipped";                                         \
+  };                                    
 
 
+#define GLOVES_BLOUSED_UNZIPPED(CAMO,SHIRT,SLEEVE)           \
 
 
+*/
 
+#define NEW_UNIFORM_SETUP                       \
+  NORMAL_WEH(TShirt,Tucked)
 
+#define NEW_UNIFORM_CLASS(CAMO) \
+  NORMAL_CLASS(CAMO,TShirt,Tucked)
 
 
 #define UNIFORM_WEP(CAMO,PLATOON,ROLE,DISPLAYNAME)                              \
@@ -203,43 +324,157 @@ class twelfth_uni_##CAMO##_##PLATOON##_##ROLE##_wep : twelfth_uni_ng_base_wep { 
     allowedSlots[]={"701","801","901"};                                         \
     armor=20;                                                                   \
   };                                                                            \
-};                                                                              \
+};                                                                              
 
 #define ALL_UNI_WEP(CAMO)                                  \
-UNIFORM_WEP(CAMO,na,na,"[12th][N/A][Inf] Armor")          \
-UNIFORM_WEP(CAMO,na,med,"[12th][N/A][Inf][Med] Armor")     \
-UNIFORM_WEP(CAMO,1pl,na,"[12th][1PL][Inf] Armor")         \
-UNIFORM_WEP(CAMO,1pl,med,"[12th][1PL][Inf][Med] Armor")    \
-UNIFORM_WEP(CAMO,2pl,na,"[12th][2PL][Inf] Armor")           \
-UNIFORM_WEP(CAMO,2pl,med,"[12th][2PL][Inf][Med] Armor")     \
-UNIFORM_WEP(CAMO,hq,na,"[12th][HQ][Inf] Armor")             \
-UNIFORM_WEP(CAMO,hq,med,"[12th][HQ][Inf][Med] Armor")       \
-UNIFORM_WEP(CAMO,lpl,na,"[12th][LOGI][Inf] Armor")          \
-UNIFORM_WEP(CAMO,lpl,med,"[12th][LOGI][Inf][Med] Armor")    \
+  UNIFORM_WEP(CAMO,na,na,"[12th][N/A][Inf] Armor")          \
+  UNIFORM_WEP(CAMO,na,med,"[12th][N/A][Inf][Med] Armor")     \
+  UNIFORM_WEP(CAMO,1pl,na,"[12th][1PL][Inf] Armor")         \
+  UNIFORM_WEP(CAMO,1pl,med,"[12th][1PL][Inf][Med] Armor")    \
+  UNIFORM_WEP(CAMO,2pl,na,"[12th][2PL][Inf] Armor")           \
+  UNIFORM_WEP(CAMO,2pl,med,"[12th][2PL][Inf][Med] Armor")     \
+  UNIFORM_WEP(CAMO,hq,na,"[12th][HQ][Inf] Armor")             \
+  UNIFORM_WEP(CAMO,hq,med,"[12th][HQ][Inf][Med] Armor")       \
+  UNIFORM_WEP(CAMO,lpl,na,"[12th][LOGI][Inf] Armor")          \
+  UNIFORM_WEP(CAMO,lpl,med,"[12th][LOGI][Inf][Med] Armor")    \
 
 #define ALL_UNI_VEH(CAMO,ARM)                                  \
-UNIFORM_VEH(CAMO,na,na,ARM,"[12th][N/A][Inf] Armor")          \
-UNIFORM_VEH(CAMO,na,med,ARM,"[12th][N/A][Inf][Med] Armor")     \
-UNIFORM_VEH(CAMO,1pl,na,ARM,"[12th][1PL][Inf] Armor")         \
-UNIFORM_VEH(CAMO,1pl,med,ARM,"[12th][1PL][Inf][Med] Armor")    \
-UNIFORM_VEH(CAMO,2pl,na,ARM,"[12th][2PL][Inf] Armor")         \
-UNIFORM_VEH(CAMO,2pl,med,ARM,"[12th][2PL][Inf][Med] Armor")    \
-UNIFORM_VEH(CAMO,hq,na,ARM,"[12th][HQ][Inf] Armor")           \
-UNIFORM_VEH(CAMO,hq,med,ARM,"[12th][HQ][Inf][Med] Armor")      \
-UNIFORM_VEH(CAMO,lpl,na,ARM,"[12th][LOGI][Inf] Armor")         \
-UNIFORM_VEH(CAMO,lpl,med,ARM,"[12th][LOGI][Inf][Med] Armor")   \
+  UNIFORM_VEH(CAMO,na,na,ARM,"[12th][N/A][Inf] Armor")          \
+  UNIFORM_VEH(CAMO,na,med,ARM,"[12th][N/A][Inf][Med] Armor")     \
+  UNIFORM_VEH(CAMO,1pl,na,ARM,"[12th][1PL][Inf] Armor")         \
+  UNIFORM_VEH(CAMO,1pl,med,ARM,"[12th][1PL][Inf][Med] Armor")    \
+  UNIFORM_VEH(CAMO,2pl,na,ARM,"[12th][2PL][Inf] Armor")         \
+  UNIFORM_VEH(CAMO,2pl,med,ARM,"[12th][2PL][Inf][Med] Armor")    \
+  UNIFORM_VEH(CAMO,hq,na,ARM,"[12th][HQ][Inf] Armor")           \
+  UNIFORM_VEH(CAMO,hq,med,ARM,"[12th][HQ][Inf][Med] Armor")      \
+  UNIFORM_VEH(CAMO,lpl,na,ARM,"[12th][LOGI][Inf] Armor")         \
+  UNIFORM_VEH(CAMO,lpl,med,ARM,"[12th][LOGI][Inf][Med] Armor")   \
 
 #define ALL_UNI_GI(CAMO)      \
-UNIFORM_GI(CAMO,na,na)        \
-UNIFORM_GI(CAMO,na,med)       \
-UNIFORM_GI(CAMO,1pl,na)       \
-UNIFORM_GI(CAMO,1pl,med)      \
-UNIFORM_GI(CAMO,2pl,na)       \
-UNIFORM_GI(CAMO,2pl,med)      \
-UNIFORM_GI(CAMO,hq,na)        \
-UNIFORM_GI(CAMO,hq,med)       \
-UNIFORM_GI(CAMO,lpl,na)       \
-UNIFORM_GI(CAMO,lpl,med)      \
+  UNIFORM_GI(CAMO,na,na)        \
+  UNIFORM_GI(CAMO,na,med)       \
+  UNIFORM_GI(CAMO,1pl,na)       \
+  UNIFORM_GI(CAMO,1pl,med)      \
+  UNIFORM_GI(CAMO,2pl,na)       \
+  UNIFORM_GI(CAMO,2pl,med)      \
+  UNIFORM_GI(CAMO,hq,na)        \
+  UNIFORM_GI(CAMO,hq,med)       \
+  UNIFORM_GI(CAMO,lpl,na)       \
+  UNIFORM_GI(CAMO,lpl,med)      \
+  VEST_GI(Light,CAMO,na,na)        \
+  VEST_GI(Light,CAMO,na,med)       \
+  VEST_GI(Light,CAMO,1pl,na)       \
+  VEST_GI(Light,CAMO,1pl,med)      \
+  VEST_GI(Light,CAMO,2pl,na)       \
+  VEST_GI(Light,CAMO,2pl,med)      \
+  VEST_GI(Light,CAMO,hq,na)        \
+  VEST_GI(Light,CAMO,hq,med)       \
+  VEST_GI(Light,CAMO,lpl,na)       \
+  VEST_GI(Light,CAMO,lpl,med)      \
+  VEST_GI(BaseSec1,CAMO,na,na)        \
+  VEST_GI(BaseSec1,CAMO,na,med)       \
+  VEST_GI(BaseSec1,CAMO,1pl,na)       \
+  VEST_GI(BaseSec1,CAMO,1pl,med)      \
+  VEST_GI(BaseSec1,CAMO,2pl,na)       \
+  VEST_GI(BaseSec1,CAMO,2pl,med)      \
+  VEST_GI(BaseSec1,CAMO,hq,na)        \
+  VEST_GI(BaseSec1,CAMO,hq,med)       \
+  VEST_GI(BaseSec1,CAMO,lpl,na)       \
+  VEST_GI(BaseSec1,CAMO,lpl,med)      \
+  VEST_GI(BaseSec2,CAMO,na,na)        \
+  VEST_GI(BaseSec2,CAMO,na,med)       \
+  VEST_GI(BaseSec2,CAMO,1pl,na)       \
+  VEST_GI(BaseSec2,CAMO,1pl,med)      \
+  VEST_GI(BaseSec2,CAMO,2pl,na)       \
+  VEST_GI(BaseSec2,CAMO,2pl,med)      \
+  VEST_GI(BaseSec2,CAMO,hq,na)        \
+  VEST_GI(BaseSec2,CAMO,hq,med)       \
+  VEST_GI(BaseSec2,CAMO,lpl,na)       \
+  VEST_GI(BaseSec2,CAMO,lpl,med)      \
+  VEST_GI(BaseSec3,CAMO,na,na)        \
+  VEST_GI(BaseSec3,CAMO,na,med)       \
+  VEST_GI(BaseSec3,CAMO,1pl,na)       \
+  VEST_GI(BaseSec3,CAMO,1pl,med)      \
+  VEST_GI(BaseSec3,CAMO,2pl,na)       \
+  VEST_GI(BaseSec3,CAMO,2pl,med)      \
+  VEST_GI(BaseSec3,CAMO,hq,na)        \
+  VEST_GI(BaseSec3,CAMO,hq,med)       \
+  VEST_GI(BaseSec3,CAMO,lpl,na)       \
+  VEST_GI(BaseSec3,CAMO,lpl,med)      \
+  VEST_GI(GungnirS_1,CAMO,na,na)        \
+  VEST_GI(GungnirS_1,CAMO,na,med)       \
+  VEST_GI(GungnirS_1,CAMO,1pl,na)       \
+  VEST_GI(GungnirS_1,CAMO,1pl,med)      \
+  VEST_GI(GungnirS_1,CAMO,2pl,na)       \
+  VEST_GI(GungnirS_1,CAMO,2pl,med)      \
+  VEST_GI(GungnirS_1,CAMO,hq,na)        \
+  VEST_GI(GungnirS_1,CAMO,hq,med)       \
+  VEST_GI(GungnirS_1,CAMO,lpl,na)       \
+  VEST_GI(GungnirS_1,CAMO,lpl,med)      \
+  VEST_GI(GungnirS_2,CAMO,na,na)        \
+  VEST_GI(GungnirS_2,CAMO,na,med)       \
+  VEST_GI(GungnirS_2,CAMO,1pl,na)       \
+  VEST_GI(GungnirS_2,CAMO,1pl,med)      \
+  VEST_GI(GungnirS_2,CAMO,2pl,na)       \
+  VEST_GI(GungnirS_2,CAMO,2pl,med)      \
+  VEST_GI(GungnirS_2,CAMO,hq,na)        \
+  VEST_GI(GungnirS_2,CAMO,hq,med)       \
+  VEST_GI(GungnirS_2,CAMO,lpl,na)       \
+  VEST_GI(GungnirS_2,CAMO,lpl,med)      \
+  VEST_GI(GungnirS_3,CAMO,na,na)        \
+  VEST_GI(GungnirS_3,CAMO,na,med)       \
+  VEST_GI(GungnirS_3,CAMO,1pl,na)       \
+  VEST_GI(GungnirS_3,CAMO,1pl,med)      \
+  VEST_GI(GungnirS_3,CAMO,2pl,na)       \
+  VEST_GI(GungnirS_3,CAMO,2pl,med)      \
+  VEST_GI(GungnirS_3,CAMO,hq,na)        \
+  VEST_GI(GungnirS_3,CAMO,hq,med)       \
+  VEST_GI(GungnirS_3,CAMO,lpl,na)       \
+  VEST_GI(GungnirS_3,CAMO,lpl,med)      \
+  VEST_GI(GungnirL_1,CAMO,na,na)        \
+  VEST_GI(GungnirL_1,CAMO,na,med)       \
+  VEST_GI(GungnirL_1,CAMO,1pl,na)       \
+  VEST_GI(GungnirL_1,CAMO,1pl,med)      \
+  VEST_GI(GungnirL_1,CAMO,2pl,na)       \
+  VEST_GI(GungnirL_1,CAMO,2pl,med)      \
+  VEST_GI(GungnirL_1,CAMO,hq,na)        \
+  VEST_GI(GungnirL_1,CAMO,hq,med)       \
+  VEST_GI(GungnirL_1,CAMO,lpl,na)       \
+  VEST_GI(GungnirL_1,CAMO,lpl,med)      \
+  VEST_GI(GungnirL_2,CAMO,na,na)        \
+  VEST_GI(GungnirL_2,CAMO,na,med)       \
+  VEST_GI(GungnirL_2,CAMO,1pl,na)       \
+  VEST_GI(GungnirL_2,CAMO,1pl,med)      \
+  VEST_GI(GungnirL_2,CAMO,2pl,na)       \
+  VEST_GI(GungnirL_2,CAMO,2pl,med)      \
+  VEST_GI(GungnirL_2,CAMO,hq,na)        \
+  VEST_GI(GungnirL_2,CAMO,hq,med)       \
+  VEST_GI(GungnirL_2,CAMO,lpl,na)       \
+  VEST_GI(GungnirL_2,CAMO,lpl,med)      \
+  VEST_GI(GungnirL_3,CAMO,na,na)        \
+  VEST_GI(GungnirL_3,CAMO,na,med)       \
+  VEST_GI(GungnirL_3,CAMO,1pl,na)       \
+  VEST_GI(GungnirL_3,CAMO,1pl,med)      \
+  VEST_GI(GungnirL_3,CAMO,2pl,na)       \
+  VEST_GI(GungnirL_3,CAMO,2pl,med)      \
+  VEST_GI(GungnirL_3,CAMO,hq,na)        \
+  VEST_GI(GungnirL_3,CAMO,hq,med)       \
+  VEST_GI(GungnirL_3,CAMO,lpl,na)       \
+  VEST_GI(GungnirL_3,CAMO,lpl,med)      \
+
+
+
+
+
+
+
+
+
+
+
+
+
+// NEW uniform gear info
 
 #define NEW_UNIFROM_GI(CAMO)                        \
   NORMAL(CAMO,TShirt,Tucked)                       \
@@ -382,7 +617,7 @@ class twelfth_helm_##SUFFIX##_nv: twelfth_helm_base { \
     Provide in quotes.
 */
 #define HELM_CH43A(SUFFIX,DISPLAY)                 \
-class twelfth_helmCH43A_##SUFFIX##: twelfth_helmCH43A_base {    \
+  class twelfth_helmCH43A_##SUFFIX##: twelfth_helmCH43A_base {    \
   scope=2;                                      \
   author="Weber";                                \
   picture="";                                   \
@@ -663,27 +898,6 @@ For those of you peeking around, sorry, couldn't
 have made this macro work cleanly without carrying
 a local copy of the base textures from UNSCF around here.
 */
-
-/*
-New macro for the new uniforms
-
-#define UNI_NV_GI(CSFX,CAMO,EL,ROLE) \
-class twelfth_helm_##CSFX##_nv {         \
-  model="twelfth_base_helms";            \
-  camo=#CAMO;                         \
-  element=#EL;                        \
-  role=#ROLE;                         \
-  visor="No";                         \
-};
-
-
-*/
-
-
-
-
-
-
 
 /*
   A Macro for the IAHDS Pilot helmet.

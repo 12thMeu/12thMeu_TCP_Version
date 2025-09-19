@@ -30,7 +30,7 @@ class CfgPatches {
   class twelfth_vests {
     units[]= {}; // We’re not defining placeable units in this PBO.
     weapons[]= { 
-      "twelfth_invis_vest","twelfth_M43A_Light_base_wep"
+      "twelfth_invis_vest","twelfth_M43A_Light_base"
         /*
           If you create more vests that are stand-alone (not just variants),
           add them here so the engine recognizes them as part of this mod.
@@ -67,16 +67,9 @@ class CfgWeapons
   class ItemCore;
   class VestItem;
   class OPTRE_UNSC_M52A_Armor2_MAR;
-	NEW_VEST(BaseSec_1)
-	NEW_VEST(BaseSec_2)
-	NEW_VEST(BaseSec_3)
-	NEW_VEST(GungnirS_1)
-	NEW_VEST(GungnirS_2)
-	NEW_VEST(GungnirS_3)
-	NEW_VEST(GungnirL_1)
-	NEW_VEST(GungnirL_2)
-	NEW_VEST(GungnirL_3)
-	NEW_VEST(Light)
+
+
+
 
     /*
       This is an OPTRE (Operation: Trebuchet) base class used
@@ -154,189 +147,9 @@ class CfgWeapons
 	
   */
   
-    //-New Armour-----------------------------------------------------
-  
-    // Base uniform item for new-gen armor
-	
-	
-  class twelfth_M43A_Light_base_wep: TCP_V_M43A_Light_Black
-  {
-    scope = 2;
-    scopeArsenal = 2;
-    author = "Sammy";
-    displayName = "[12th] Light Vest";
-    ACE_GForceCoef = 0.4;
-    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_Light.p3d";
-    hiddenSelections[] = {"camo","decals"};
-    class ItemInfo: VestItem
-    {
-      containerClass = "Supply100";
-      mass = 80;
-      VEST_HITPOINT_INFO 
-			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_Light.p3d";
-    };
-	hiddenSelectionsTextures[] = {VEST_PATH_01,HELM_DEC_PATH};
-  };
+  //-New Armour-----------------------------------------------------
+  NEW_VEST_SETUP
+  ALL_VESTS(std)
 
-	class twelfth_M43A_BaseSec1_base_wep: TCP_V_M43A_BaseSec_1_Black {
-    scope = 2;
-    scopeArsenal = 2;
-    author = "Sammy";
-    displayName = "[12th] Base Security";
-    ACE_GForceCoef = 0.4;
-    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_1.p3d";
-		hiddenSelections[] = {"camo","camo1","decals"};
-    class ItemInfo: VestItem
-    {
-      containerClass = "Supply100";
-      mass = 80;
-      VEST_HITPOINT_INFO 
-			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_1.p3d";
-    };
-		hiddenSelectionsTextures[] = {VEST_PATH_01,BASESEC_PATH,HELM_DEC_PATH};
-  };
-
-    class twelfth_M43A_BaseSec2_base_wep: TCP_V_M43A_BaseSec_2_Black {
-    scope = 2;
-    scopeArsenal = 2;
-    author = "Sammy";
-    displayName = "[12th] Base Security Vest + Thighs";
-    ACE_GForceCoef = 0.4;
-    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","decals"};
-    class ItemInfo: VestItem
-    {
-      containerClass = "Supply100";
-      mass = 80;
-      VEST_HITPOINT_INFO 
-			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_2.p3d";
-    };
-		hiddenSelectionsTextures[] = {VEST_PATH_01,BASESEC_PATH,VEST_PATH_02,HELM_DEC_PATH};
-  };
-
-    class twelfth_M43A_BaseSec3_base_wep: TCP_V_M43A_BaseSec_3_Black {
-    scope = 2;
-    scopeArsenal = 2;
-    author = "Sammy";
-    displayName = "[12th] Base Security Vest + Legs";
-    ACE_GForceCoef = 0.4;
-    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_3.p3d";
-    hiddenSelections[] = {"camo","camo1","camo2","decals"};
-    class ItemInfo: VestItem
-    {
-      containerClass = "Supply100";
-      mass = 80;
-      VEST_HITPOINT_INFO 
-			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BaseSec_3.p3d";
-    };
-		hiddenSelectionsTextures[] = {VEST_PATH_01,BASESEC_PATH,VEST_PATH_02,HELM_DEC_PATH};
-  };
-
-    class twelfth_M43A_GungnirS_1_base_wep: TCP_V_M43A_GungnirS_1_Black {
-    scope = 2;
-    scopeArsenal = 2;
-    author = "Sammy";
-    displayName = "[12th] Small Gungnir Vest";
-    ACE_GForceCoef = 0.4;
-    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirS_1.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","decals"};
-    class ItemInfo: VestItem
-    {
-      containerClass = "Supply100";
-      mass = 80;
-      VEST_HITPOINT_INFO 
-			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirS_1.p3d";
-    };
-		hiddenSelectionsTextures[] = {VEST_PATH_01,GUNGNIR_PATH,HELM_DEC_PATH};
-  };
-
-  class twelfth_M43A_GungnirS_2_base_wep: TCP_V_M43A_GungnirS_2_Black {
-    scope = 2;
-    scopeArsenal = 2;
-    author = "Sammy";
-    displayName = "[12th] Small Gungnir Vest + Thighs";
-    ACE_GForceCoef = 0.4;
-    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_BGungnirS_2.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","decals"};
-    class ItemInfo: VestItem
-    {
-      containerClass = "Supply100";
-      mass = 80;
-      VEST_HITPOINT_INFO 
-			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirS_2.p3d";
-    };
-		hiddenSelectionsTextures[] = {VEST_PATH_01,GUNGNIR_PATH,VEST_PATH_02,HELM_DEC_PATH};
-  };
-
-  class twelfth_M43A_GungnirS_3_base_wep: TCP_V_M43A_GungnirS_3_Black {
-    scope = 2;
-    scopeArsenal = 2;
-    author = "Sammy";
-    displayName = "[12th] Small Gungnir Vest + Legs";
-    ACE_GForceCoef = 0.4;
-    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirS_3.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","decals"};
-    class ItemInfo: VestItem
-    {
-      containerClass = "Supply100";
-      mass = 80;
-      VEST_HITPOINT_INFO 
-			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirS_3.p3d";
-    };
-		hiddenSelectionsTextures[] = {VEST_PATH_01,GUNGNIR_PATH,VEST_PATH_02,HELM_DEC_PATH};
-  };
-
-   class twelfth_M43A_GungnirL_1_base_wep: TCP_V_M43A_GungnirL_1_Black {
-    scope = 2;
-    scopeArsenal = 2;
-    author = "Sammy";
-    displayName = "[12th] Large Gungnir Vest";
-    ACE_GForceCoef = 0.4;
-    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_1.p3d";
-		hiddenSelections[] = {"camo","camo1","decals"};
-    class ItemInfo: VestItem
-    {
-      containerClass = "Supply100";
-      mass = 80;
-      VEST_HITPOINT_INFO 
-			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_1.p3d";
-    };
-		hiddenSelectionsTextures[] = {VEST_PATH_01,GUNGNIR_PATH,HELM_DEC_PATH};
-  };
-
-    class twelfth_M43A_GungnirL_2_base_wep: TCP_V_M43A_GungnirL_2_Black {
-    scope = 2;
-    scopeArsenal = 2;
-    author = "Sammy";
-    displayName = "[12th] Large Gungnir Vest + Thighs";
-    ACE_GForceCoef = 0.4;
-    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_2.p3d";
-			hiddenSelections[] = {"camo","camo1","camo2","decals"};
-    class ItemInfo: VestItem
-    {
-      containerClass = "Supply100";
-      mass = 80;
-      VEST_HITPOINT_INFO 
-			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_2.p3d";
-    };
-		hiddenSelectionsTextures[] = {VEST_PATH_01,GUNGNIR_PATH,VEST_PATH_02,HELM_DEC_PATH};
-};
-
-    class twelfth_M43A__GungnirL_3_base_wep: TCP_V_M43A_GungnirL_3_Black {
-    scope = 2;
-    scopeArsenal = 2;
-    author = "Sammy";
-    displayName = "[12th] Large Gungnir Vest + Legs";
-    ACE_GForceCoef = 0.4;
-    model = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_3.p3d";
-		hiddenSelections[] = {"camo","camo1","camo2","decals"};
-    class ItemInfo: VestItem
-    {
-      containerClass = "Supply100";
-      mass = 80;
-      VEST_HITPOINT_INFO 
-			uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Vests\M43A\M43A_GungnirL_3.p3d";
-    };
-		hiddenSelectionsTextures[] = {VEST_PATH_01,GUNGNIR_PATH,VEST_PATH_02,HELM_DEC_PATH};
-  };
+  // Base uniform item for new-gen armor
 };

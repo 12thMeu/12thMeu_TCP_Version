@@ -282,6 +282,11 @@ class CfgVehicles {
   ALL_UNI_VEH(urban,std)
   ALL_UNI_VEH(desert,std)
 
+
+  NEW_UNIFORM_SETUP
+  NEW_UNIFORM_CLASS(std)
+  
+
 };
 
 // -----------------------------------------------------------------------------
@@ -472,9 +477,9 @@ class CfgWeapons {
   };
   // Helmet_CH43A
   class twelfth_helmCH43A_base: TCP_H_Helmet_CH43A_Base {
-    scope=2;
-    author="Waylen";
-    scopeArsenal=2;
+    scope=0;
+    author="Sammy";
+    scopeArsenal=0;
     displayName="[12th] Helmet Base (DON'T USE)";
     ace_hearing_protection=1;
     ace_hearing_lowerVolume=0;
@@ -533,10 +538,10 @@ class CfgWeapons {
 
   //-UNIFORM-WEPS-----------------------------------------------------
   ALL_UNI_WEP(std)
-/*   ALL_UNI_WEP(forest)
+  ALL_UNI_WEP(forest)
   ALL_UNI_WEP(drk)
   ALL_UNI_WEP(urban)
-  ALL_UNI_WEP(desert) */
+  ALL_UNI_WEP(desert)
 
   //-HELMETS----------------------------------------------------------
   ALL_HELM(std)
@@ -657,10 +662,10 @@ class XtdGearModels {
       class camo {
         alwaysSelectable = 1;
         label="Camouflage";
-        values[]={"Black","Tan","Grey","White","Arctic","Arid","Green","Olive","Tropic","Tundra","Urban","Woodland"};
+        values[]={"Black","Tan","Gray","White","Arctic","Arid","Green","Olive","Tropic","Tundra","Urban","Woodland"};
         class Black {label="Black";};
         class Tan {label="Tan";};
-        class Grey {label="Grey";};
+        class Gray {label="Gray";};
         class White {label="White";};
         class Arctic {label="Arctic";};
         class Arid {label="Arid";};
@@ -715,7 +720,7 @@ class XtdGearModels {
 
 
     };
-      class twelfth_base_uniforms {
+    class twelfth_base_uniforms {
       label="12th Infantry Uniforms";
       options[] = {"camo", "element","role"};
       class camo {
@@ -728,6 +733,54 @@ class XtdGearModels {
         class urban {label="Urban";     image=XTP(urban);}; //maybe winter?? will need to look into new armor pieces
         class drk {label="VBSS";     image=XTP(vbss);};
 	    	class desert {label="Desert";     image=XTP(desert);};
+      };
+      class element {
+        alwaysSelectable = 1;
+        label="Element";
+        values[]={"na","hq","1pl","2pl","lpl"};
+        class na  {label="None";};
+        class hq  {label="HQ";  image=XTP(athena);};
+        class 1pl {label="1PLT"; image=XTP(1pl);};
+        class 2pl {label="2PLT";   image=XTP(2pl);};
+        class lpl {label="LOGI";   image=XTP(chaos);};
+      };
+      class role {
+        alwaysSelectable = 1;
+        label="MOS";
+        values[]={"na","med"};
+        class na  {label="None";};
+        class med {label="Corpsman"; image=XTP(med);};
+      };
+    };
+
+    class twelfth_base_vests {
+      label="12th Infantry Vests";
+      options[] = {"type","camo", "element","role"};
+      class type{
+        alwaysSelectable = 1;
+        label="Armour Type";
+        values[]={"Light","BaseSec1","BaseSec2","BaseSec3","GungnirS_1","GungnirS_2","GungnirS_3","GungnirL_1","GungnirL_2","GungnirL_3"};
+        class Light  {label="Light";};
+        class BaseSec1  {label="Security";};
+        class BaseSec2 {label="Sec. Thighs";};
+        class BaseSec3 {label="Sec. Full";};
+        class GungnirS_1  {label="Gugnir";};
+        class GungnirS_2 {label="G. Thighs";};
+        class GungnirS_3 {label="G. Full";};
+        class GungnirL_1  {label="G. L";};
+        class GungnirL_2 {label="G. L Thighs";};
+        class GungnirL_3 {label="G. L Full";};
+      };
+      class camo {
+        alwaysSelectable = 1;
+        label="Camouflage";
+        values[]={"forest", "std", "forest90", "urban", "drk", "desert"};
+        class forest {label="Standard";};
+        class std {label="MARPAT";};
+        class forest90 {label="Forest90";};
+        class urban {label="Urban";}; //maybe winter?? will need to look into new armor pieces
+        class drk {label="VBSS";};
+	    	class desert {label="Desert";};
       };
       class element {
         alwaysSelectable = 1;
@@ -782,7 +835,7 @@ class XtdGearInfos {
     //-------------------------------------- New uniforms
     NEW_UNIFROM_GI(Black)
     NEW_UNIFROM_GI(Tan)
-    NEW_UNIFROM_GI(Grey)
+    NEW_UNIFROM_GI(Gray)
     NEW_UNIFROM_GI(White)
     NEW_UNIFROM_GI(Arctic)
     NEW_UNIFROM_GI(Arid)
