@@ -1,4 +1,7 @@
+// This directive suppresses specific Hemtt warnings related to padded arguments in the configuration file.
 #pragma hemtt suppress pw3_padded_arg config
+
+
 #include "config_macros.hpp"
 
 /*
@@ -223,6 +226,8 @@ class CfgVehicles {
   class OPTRE_UNSC_CH252A_Helmet_Base;
   class OPTRE_UNSC_CH252A_Helmet_dp;
   class 19th_ODST;
+  //TCP UNIFORM vehicle definitions
+
   
   // ---------------------------------------------------------------------------
   //  twelfth_uni_ng_base_veh
@@ -253,6 +258,15 @@ class CfgVehicles {
     };
   };
 
+/*
+---------------------------New uniform setup---------------------------
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+-----------------------------------------------------------------------
+*/
+  TCP_VEH_CLASS_DEF
+  VEH_UNI_CLASS(std)
+
 
   // ---------------------------------------------------------------------------
   //  twelfth_odst_uniform_veh
@@ -282,9 +296,6 @@ class CfgVehicles {
   ALL_UNI_VEH(urban,std)
   ALL_UNI_VEH(desert,std)
 
-
-  NEW_UNIFORM_SETUP
-  NEW_UNIFORM_CLASS(std)
   
 
 };
@@ -328,6 +339,11 @@ class CfgWeapons {
       armor=20;
     };
   };
+
+  //TCP UNIFORM Weapon definitions
+  TCP_WEP_CLASS_DEF
+  WEP_UNI_CLASS(std)
+
 
 
   // Example ODST uniform item referencing twelfth_odst_uniform_veh
@@ -483,11 +499,11 @@ class CfgWeapons {
     displayName="[12th] Helmet Base (DON'T USE)";
     ace_hearing_protection=1;
     ace_hearing_lowerVolume=0;
-	class TCP_uniformDecals
-	{
-		selectionName = "nameCH43A";
-	};
-	model = "\TCP\Characters\BLUFOR\UNSC\Army\Headgear\helmet_CH43A\h_helmet_CH43A.p3d";
+    class TCP_uniformDecals
+    {
+      selectionName = "nameCH43A";
+    };
+	  model = "\TCP\Characters\BLUFOR\UNSC\Army\Headgear\helmet_CH43A\h_helmet_CH43A.p3d";
     class ItemInfo: HeadgearItem {
 	  uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Headgear\helmet_CH43A\h_helmet_CH43A.p3d";
       mass=40;
@@ -662,19 +678,9 @@ class XtdGearModels {
       class camo {
         alwaysSelectable = 1;
         label="Camouflage";
-        values[]={"Black","Tan","Gray","White","Arctic","Arid","Green","Olive","Tropic","Tundra","Urban","Woodland"};
-        class Black {label="Black";};
-        class Tan {label="Tan";};
-        class Gray {label="Gray";};
-        class White {label="White";};
-        class Arctic {label="Arctic";};
-        class Arid {label="Arid";};
-        class Green {label="Green";};
-        class Olive {label="Olive";};
-        class Tropic {label="Tropic";};
-        class Tundra {label="Tundra";};
-        class Urban {label="Urban";};
-        class Woodland {label="Woodland";};
+        values[]={"std"};
+        class std {label="Standard";     image=XTP(forest);};
+
 
       };
       class sleeve {
@@ -833,18 +839,8 @@ class XtdGearInfos {
 
 
     //-------------------------------------- New uniforms
-    NEW_UNIFROM_GI(Black)
-    NEW_UNIFROM_GI(Tan)
-    NEW_UNIFROM_GI(Gray)
-    NEW_UNIFROM_GI(White)
-    NEW_UNIFROM_GI(Arctic)
-    NEW_UNIFROM_GI(Arid)
-    NEW_UNIFROM_GI(Green)
-    NEW_UNIFROM_GI(Olive)
-    NEW_UNIFROM_GI(Tropic)
-    NEW_UNIFROM_GI(Tundra)
-    NEW_UNIFROM_GI(Urban)
-    NEW_UNIFROM_GI(Woodland)
+    NEW_UNIFROM_GI(std)
+
 
 
     
