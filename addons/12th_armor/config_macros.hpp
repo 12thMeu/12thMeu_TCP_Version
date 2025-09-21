@@ -739,8 +739,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   TCP_VEH_CLASS_BLOUSED_GLOVES(TacShirt,HalfRoll)                       \
   TCP_VEH_CLASS_BLOUSED_GLOVES(TacShirt,QuarterRoll)                       \
   TCP_VEH_CLASS_BLOUSED_GLOVES(TacShirt,SlimSleeve)                       \
-  TCP_VEH_CLASS_UNZIPPED(TShirt,Tucked)                       \
-  TCP_VEH_CLASS_UNZIPPED(TShirt,UnTucked)                       \
   TCP_VEH_CLASS_UNZIPPED(FieldTop,Full)                       \
   TCP_VEH_CLASS_UNZIPPED(FieldTop,HalfRoll)                       \
   TCP_VEH_CLASS_UNZIPPED(FieldTop,QuarterRoll)                       \
@@ -749,8 +747,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   TCP_VEH_CLASS_UNZIPPED(TacShirt,HalfRoll)                       \
   TCP_VEH_CLASS_UNZIPPED(TacShirt,QuarterRoll)                       \
   TCP_VEH_CLASS_UNZIPPED(TacShirt,SlimSleeve)                       \
-  TCP_VEH_CLASS_BLOUSED_UNZIPPED(TShirt,Tucked)                       \
-  TCP_VEH_CLASS_BLOUSED_UNZIPPED(TShirt,UnTucked)                       \
   TCP_VEH_CLASS_BLOUSED_UNZIPPED(FieldTop,Full)                       \
   TCP_VEH_CLASS_BLOUSED_UNZIPPED(FieldTop,HalfRoll)                       \
   TCP_VEH_CLASS_BLOUSED_UNZIPPED(FieldTop,QuarterRoll)                       \
@@ -759,8 +755,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   TCP_VEH_CLASS_BLOUSED_UNZIPPED(TacShirt,HalfRoll)                       \
   TCP_VEH_CLASS_BLOUSED_UNZIPPED(TacShirt,QuarterRoll)                       \
   TCP_VEH_CLASS_BLOUSED_UNZIPPED(TacShirt,SlimSleeve)                       \
-  TCP_VEH_CLASS_GLOVES_UNZIPPED(TShirt,Tucked)                       \
-  TCP_VEH_CLASS_GLOVES_UNZIPPED(TShirt,UnTucked)                                     \
   TCP_VEH_CLASS_GLOVES_UNZIPPED(FieldTop,Full)                                       \
   TCP_VEH_CLASS_GLOVES_UNZIPPED(FieldTop,HalfRoll)                                   \
   TCP_VEH_CLASS_GLOVES_UNZIPPED(FieldTop,QuarterRoll)                                \
@@ -769,8 +763,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   TCP_VEH_CLASS_GLOVES_UNZIPPED(TacShirt,HalfRoll)                                   \
   TCP_VEH_CLASS_GLOVES_UNZIPPED(TacShirt,QuarterRoll)                                \
   TCP_VEH_CLASS_GLOVES_UNZIPPED(TacShirt,SlimSleeve)                                 \
-  TCP_VEH_CLASS_GLOVES_BLOUSED_UNZIPPED(TShirt,Tucked)                               \
-  TCP_VEH_CLASS_GLOVES_BLOUSED_UNZIPPED(TShirt,UnTucked)                             \
   TCP_VEH_CLASS_GLOVES_BLOUSED_UNZIPPED(FieldTop,Full)                               \
   TCP_VEH_CLASS_GLOVES_BLOUSED_UNZIPPED(FieldTop,HalfRoll)                           \
   TCP_VEH_CLASS_GLOVES_BLOUSED_UNZIPPED(FieldTop,QuarterRoll)                        \
@@ -822,8 +814,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   TCP_WEP_CLASS_BLOUSED_GLOVES(TacShirt,HalfRoll)                       \
   TCP_WEP_CLASS_BLOUSED_GLOVES(TacShirt,QuarterRoll)                       \
   TCP_WEP_CLASS_BLOUSED_GLOVES(TacShirt,SlimSleeve)                       \
-  TCP_WEP_CLASS_UNZIPPED(TShirt,Tucked)                       \
-  TCP_WEP_CLASS_UNZIPPED(TShirt,UnTucked)                       \
   TCP_WEP_CLASS_UNZIPPED(FieldTop,Full)                       \
   TCP_WEP_CLASS_UNZIPPED(FieldTop,HalfRoll)                       \
   TCP_WEP_CLASS_UNZIPPED(FieldTop,QuarterRoll)                       \
@@ -832,8 +822,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   TCP_WEP_CLASS_UNZIPPED(TacShirt,HalfRoll)                       \
   TCP_WEP_CLASS_UNZIPPED(TacShirt,QuarterRoll)                       \
   TCP_WEP_CLASS_UNZIPPED(TacShirt,SlimSleeve)                       \
-  TCP_WEP_CLASS_BLOUSED_UNZIPPED(TShirt,Tucked)                       \
-  TCP_WEP_CLASS_BLOUSED_UNZIPPED(TShirt,UnTucked)                       \
   TCP_WEP_CLASS_BLOUSED_UNZIPPED(FieldTop,Full)                       \
   TCP_WEP_CLASS_BLOUSED_UNZIPPED(FieldTop,HalfRoll)                       \
   TCP_WEP_CLASS_BLOUSED_UNZIPPED(FieldTop,QuarterRoll)                       \
@@ -842,8 +830,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   TCP_WEP_CLASS_BLOUSED_UNZIPPED(TacShirt,HalfRoll)                       \
   TCP_WEP_CLASS_BLOUSED_UNZIPPED(TacShirt,QuarterRoll)                       \
   TCP_WEP_CLASS_BLOUSED_UNZIPPED(TacShirt,SlimSleeve)                       \
-  TCP_WEP_CLASS_GLOVES_UNZIPPED(TShirt,Tucked)                       \
-  TCP_WEP_CLASS_GLOVES_UNZIPPED(TShirt,UnTucked)                                     \
   TCP_WEP_CLASS_GLOVES_UNZIPPED(FieldTop,Full)                                       \
   TCP_WEP_CLASS_GLOVES_UNZIPPED(FieldTop,HalfRoll)                                   \
   TCP_WEP_CLASS_GLOVES_UNZIPPED(FieldTop,QuarterRoll)                                \
@@ -852,8 +838,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   TCP_WEP_CLASS_GLOVES_UNZIPPED(TacShirt,HalfRoll)                                   \
   TCP_WEP_CLASS_GLOVES_UNZIPPED(TacShirt,QuarterRoll)                                \
   TCP_WEP_CLASS_GLOVES_UNZIPPED(TacShirt,SlimSleeve)                                 \
-  TCP_WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(TShirt,Tucked)                               \
-  TCP_WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(TShirt,UnTucked)                             \
   TCP_WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(FieldTop,Full)                               \
   TCP_WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(FieldTop,HalfRoll)                           \
   TCP_WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(FieldTop,QuarterRoll)                        \
@@ -906,8 +890,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   VEH_CLASS_BLOUSED_GLOVES(CAMO,TacShirt,HalfRoll)                       \
   VEH_CLASS_BLOUSED_GLOVES(CAMO,TacShirt,QuarterRoll)                       \
   VEH_CLASS_BLOUSED_GLOVES(CAMO,TacShirt,SlimSleeve)                       \
-  VEH_CLASS_UNZIPPED(CAMO,TShirt,Tucked)                       \
-  VEH_CLASS_UNZIPPED(CAMO,TShirt,UnTucked)                       \
   VEH_CLASS_UNZIPPED(CAMO,FieldTop,Full)                       \
   VEH_CLASS_UNZIPPED(CAMO,FieldTop,HalfRoll)                       \
   VEH_CLASS_UNZIPPED(CAMO,FieldTop,QuarterRoll)                       \
@@ -916,8 +898,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   VEH_CLASS_UNZIPPED(CAMO,TacShirt,HalfRoll)\
   VEH_CLASS_UNZIPPED(CAMO,TacShirt,QuarterRoll)\
   VEH_CLASS_UNZIPPED(CAMO,TacShirt,SlimSleeve)\
-  VEH_CLASS_BLOUSED_UNZIPPED(CAMO,TShirt,Tucked)\
-  VEH_CLASS_BLOUSED_UNZIPPED(CAMO,TShirt,UnTucked)\
   VEH_CLASS_BLOUSED_UNZIPPED(CAMO,FieldTop,Full)\
   VEH_CLASS_BLOUSED_UNZIPPED(CAMO,FieldTop,HalfRoll)\
   VEH_CLASS_BLOUSED_UNZIPPED(CAMO,FieldTop,QuarterRoll)\
@@ -926,8 +906,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   VEH_CLASS_BLOUSED_UNZIPPED(CAMO,TacShirt,HalfRoll)\
   VEH_CLASS_BLOUSED_UNZIPPED(CAMO,TacShirt,QuarterRoll)\
   VEH_CLASS_BLOUSED_UNZIPPED(CAMO,TacShirt,SlimSleeve)\
-  VEH_CLASS_GLOVES_UNZIPPED(CAMO,TShirt,Tucked)\
-  VEH_CLASS_GLOVES_UNZIPPED(CAMO,TShirt,UnTucked)\
   VEH_CLASS_GLOVES_UNZIPPED(CAMO,FieldTop,Full)\
   VEH_CLASS_GLOVES_UNZIPPED(CAMO,FieldTop,HalfRoll)\
   VEH_CLASS_GLOVES_UNZIPPED(CAMO,FieldTop,QuarterRoll)\
@@ -936,8 +914,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   VEH_CLASS_GLOVES_UNZIPPED(CAMO,TacShirt,HalfRoll)\
   VEH_CLASS_GLOVES_UNZIPPED(CAMO,TacShirt,QuarterRoll)\
   VEH_CLASS_GLOVES_UNZIPPED(CAMO,TacShirt,SlimSleeve)\
-  VEH_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,TShirt,Tucked)\
-  VEH_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,TShirt,UnTucked)\
   VEH_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,Full)\
   VEH_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,HalfRoll)\
   VEH_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,QuarterRoll)\
@@ -989,8 +965,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   WEP_CLASS_BLOUSED_GLOVES(CAMO,TacShirt,HalfRoll)                       \
   WEP_CLASS_BLOUSED_GLOVES(CAMO,TacShirt,QuarterRoll)                       \
   WEP_CLASS_BLOUSED_GLOVES(CAMO,TacShirt,SlimSleeve)                       \
-  WEP_CLASS_UNZIPPED(CAMO,TShirt,Tucked)                       \
-  WEP_CLASS_UNZIPPED(CAMO,TShirt,UnTucked)                       \
   WEP_CLASS_UNZIPPED(CAMO,FieldTop,Full)                       \
   WEP_CLASS_UNZIPPED(CAMO,FieldTop,HalfRoll)                       \
   WEP_CLASS_UNZIPPED(CAMO,FieldTop,QuarterRoll)                       \
@@ -999,8 +973,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   WEP_CLASS_UNZIPPED(CAMO,TacShirt,HalfRoll)                       \
   WEP_CLASS_UNZIPPED(CAMO,TacShirt,QuarterRoll)                       \
   WEP_CLASS_UNZIPPED(CAMO,TacShirt,SlimSleeve)                       \
-  WEP_CLASS_BLOUSED_UNZIPPED(CAMO,TShirt,Tucked)                       \
-  WEP_CLASS_BLOUSED_UNZIPPED(CAMO,TShirt,UnTucked)                       \
   WEP_CLASS_BLOUSED_UNZIPPED(CAMO,FieldTop,Full)                       \
   WEP_CLASS_BLOUSED_UNZIPPED(CAMO,FieldTop,HalfRoll)                       \
   WEP_CLASS_BLOUSED_UNZIPPED(CAMO,FieldTop,QuarterRoll)                       \
@@ -1009,8 +981,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   WEP_CLASS_BLOUSED_UNZIPPED(CAMO,TacShirt,HalfRoll)                       \
   WEP_CLASS_BLOUSED_UNZIPPED(CAMO,TacShirt,QuarterRoll)                       \
   WEP_CLASS_BLOUSED_UNZIPPED(CAMO,TacShirt,SlimSleeve)                       \
-  WEP_CLASS_GLOVES_UNZIPPED(CAMO,TShirt,Tucked)                       \
-  WEP_CLASS_GLOVES_UNZIPPED(CAMO,TShirt,UnTucked)                                     \
   WEP_CLASS_GLOVES_UNZIPPED(CAMO,FieldTop,Full)                                       \
   WEP_CLASS_GLOVES_UNZIPPED(CAMO,FieldTop,HalfRoll)                                   \
   WEP_CLASS_GLOVES_UNZIPPED(CAMO,FieldTop,QuarterRoll)                                \
@@ -1019,8 +989,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   WEP_CLASS_GLOVES_UNZIPPED(CAMO,TacShirt,HalfRoll)                                   \
   WEP_CLASS_GLOVES_UNZIPPED(CAMO,TacShirt,QuarterRoll)                                \
   WEP_CLASS_GLOVES_UNZIPPED(CAMO,TacShirt,SlimSleeve)                                 \
-  WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,TShirt,Tucked)                               \
-  WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,TShirt,UnTucked)                             \
   WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,Full)                               \
   WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,HalfRoll)                           \
   WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,QuarterRoll)                        \
@@ -1074,8 +1042,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   BLOUSED_GLOVES(CAMO,TacShirt,HalfRoll)                       \
   BLOUSED_GLOVES(CAMO,TacShirt,QuarterRoll)                       \
   BLOUSED_GLOVES(CAMO,TacShirt,SlimSleeve)                       \
-  UNZIPPED(CAMO,TShirt,Tucked)                       \
-  UNZIPPED(CAMO,TShirt,UnTucked)                       \
   UNZIPPED(CAMO,FieldTop,Full)                       \
   UNZIPPED(CAMO,FieldTop,HalfRoll)                       \
   UNZIPPED(CAMO,FieldTop,QuarterRoll)                       \
@@ -1084,8 +1050,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   UNZIPPED(CAMO,TacShirt,HalfRoll)                       \
   UNZIPPED(CAMO,TacShirt,QuarterRoll)                       \
   UNZIPPED(CAMO,TacShirt,SlimSleeve)                       \
-  BLOUSED_UNZIPPED(CAMO,TShirt,Tucked)                       \
-  BLOUSED_UNZIPPED(CAMO,TShirt,UnTucked)                       \
   BLOUSED_UNZIPPED(CAMO,FieldTop,Full)                       \
   BLOUSED_UNZIPPED(CAMO,FieldTop,HalfRoll)                       \
   BLOUSED_UNZIPPED(CAMO,FieldTop,QuarterRoll)                       \
@@ -1094,8 +1058,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   BLOUSED_UNZIPPED(CAMO,TacShirt,HalfRoll)                       \
   BLOUSED_UNZIPPED(CAMO,TacShirt,QuarterRoll)                       \
   BLOUSED_UNZIPPED(CAMO,TacShirt,SlimSleeve)                       \
-  GLOVES_UNZIPPED(CAMO,TShirt,Tucked)                       \
-  GLOVES_UNZIPPED(CAMO,TShirt,UnTucked)                                     \
   GLOVES_UNZIPPED(CAMO,FieldTop,Full)                                       \
   GLOVES_UNZIPPED(CAMO,FieldTop,HalfRoll)                                   \
   GLOVES_UNZIPPED(CAMO,FieldTop,QuarterRoll)                                \
@@ -1104,8 +1066,6 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   GLOVES_UNZIPPED(CAMO,TacShirt,HalfRoll)                                   \
   GLOVES_UNZIPPED(CAMO,TacShirt,QuarterRoll)                                \
   GLOVES_UNZIPPED(CAMO,TacShirt,SlimSleeve)                                 \
-  GLOVES_BLOUSED_UNZIPPED(CAMO,TShirt,Tucked)                               \
-  GLOVES_BLOUSED_UNZIPPED(CAMO,TShirt,UnTucked)                             \
   GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,Full)                               \
   GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,HalfRoll)                           \
   GLOVES_BLOUSED_UNZIPPED(CAMO,FieldTop,QuarterRoll)                        \
@@ -1361,7 +1321,33 @@ class twelfth_helm_##SUFFIX##: twelfth_helm_base {    \
   HELM_NV(##CAMO##_lpl_psg, "[12th][Inf][NV][Logi] Helmet (PSG)")       \
   HELM_NV(##CAMO##_lpl_pl,  "[12th][Inf][NV][Logi] Helmet (PL)")        \
   HELM_NV(##CAMO##_lpl_med, "[12th][Inf][NV][Logi] Helmet (Corpsman)")  \
-  HELM_ECH43A(##CAMO##,"[12th][Inf][Closed] Helmet")
+  HELM_ECH43A(##CAMO##,         "[12th][Clsd] Helmet")                       \
+  HELM_ECH43A(##CAMO##_med,     "[12th][Clsd] Helmet (Corpsman)")            \
+  HELM_ECH43A(##CAMO##_1pl,     "[12th][Clsd][1Plt] Helmet")                 \
+  HELM_ECH43A(##CAMO##_1pl_ftl, "[12th][Clsd][1Plt] Helmet (FTL)")           \
+  HELM_ECH43A(##CAMO##_1pl_sl,  "[12th][Clsd][1Plt] Helmet (SL)")            \
+  HELM_ECH43A(##CAMO##_1pl_psg, "[12th][Clsd][1Plt] Helmet (PSG)")           \
+  HELM_ECH43A(##CAMO##_1pl_pl,  "[12th][Clsd][1Plt] Helmet (PL)")            \
+  HELM_ECH43A(##CAMO##_1pl_med, "[12th][Clsd][1Plt] Helmet (Corpsman)")      \
+  HELM_ECH43A(##CAMO##_2pl,     "[12th][Clsd][2Plt] Helmet")                 \
+  HELM_ECH43A(##CAMO##_2pl_ftl, "[12th][Clsd][2Plt] Helmet (FTL)")           \
+  HELM_ECH43A(##CAMO##_2pl_sl,  "[12th][Clsd][2Plt] Helmet (SL)")            \
+  HELM_ECH43A(##CAMO##_2pl_psg, "[12th][Clsd][2Plt] Helmet (PSG)")           \
+  HELM_ECH43A(##CAMO##_2pl_pl,  "[12th][Clsd][2Plt] Helmet (PL)")            \
+  HELM_ECH43A(##CAMO##_2pl_med, "[12th][Clsd][2Plt] Helmet (Corpsman)")      \
+  HELM_ECH43A(##CAMO##_hq,      "[12th][Clsd][HQ] Helmet")                   \
+  HELM_ECH43A(##CAMO##_hq_ftl,  "[12th][Clsd][HQ] Helmet (FTL)")             \
+  HELM_ECH43A(##CAMO##_hq_sl,   "[12th][Clsd][HQ] Helmet (SL)")              \
+  HELM_ECH43A(##CAMO##_hq_psg,  "[12th][Clsd][HQ] Helmet (PSG)")             \
+  HELM_ECH43A(##CAMO##_hq_pl,   "[12th][Clsd][HQ] Helmet (PL)")              \
+  HELM_ECH43A(##CAMO##_hq_med,  "[12th][Clsd][HQ] Helmet (Corpsman)")        \
+  HELM_ECH43A(##CAMO##_lpl,     "[12th][Clsd][Logi] Helmet")                 \
+  HELM_ECH43A(##CAMO##_lpl_ftl, "[12th][Clsd][Logi] Helmet (FTL)")           \
+  HELM_ECH43A(##CAMO##_lpl_sl,  "[12th][Clsd][Logi] Helmet (SL)")            \
+  HELM_ECH43A(##CAMO##_lpl_psg, "[12th][Clsd][Logi] Helmet (PSG)")           \
+  HELM_ECH43A(##CAMO##_lpl_pl,  "[12th][Clsd][Logi] Helmet (PL)")            \
+  HELM_ECH43A(##CAMO##_lpl_med, "[12th][Clsd][Logi] Helmet (Corpsman)")      \
+
 
 /* Stands for helm, no visor, gear info. */
 #define HELM_NV_GI(CSFX,CAMO,EL,ROLE) \
