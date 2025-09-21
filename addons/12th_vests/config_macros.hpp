@@ -286,12 +286,12 @@
 
 
 #define NEW_VEST(ARMOUR) 						                                                  \
-  class TCP_V_M43A_##ARMOUR##_Black: ItemCore {                                       \
+  class TCP_V_M43A_##ARMOUR##_Base: ItemCore {                                       \
     class ItemInfo;								                                                    \
   };
 
 #define MEU_VEST_LIGHT(CAMO,PLATOON,ROLE,DISPLAYNAME)                                       \
-  class twelfth_M43A_Light_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_Light_Black      \
+  class twelfth_M43A_Light_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_Light_Base      \
   {                                                                                   \
     scope = 2;                                                                        \
     scopeArsenal = 2;                                                                 \
@@ -322,7 +322,7 @@
 
 
 #define MEU_VEST_BS1(CAMO,PLATOON,ROLE,DISPLAYNAME)                                         \
-	class twelfth_M43A_BaseSec1_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_BaseSec_1_Black {     \
+	class twelfth_M43A_BaseSec1_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_BaseSec_1_Base {     \
     scope = 2;                                                                              \
     scopeArsenal = 2;                                                                       \
     author = "Sammy";                                                                       \
@@ -353,7 +353,7 @@
 
 
 #define MEU_VEST_BS2(CAMO,PLATOON,ROLE,DISPLAYNAME)                                       \
-  class twelfth_M43A_BaseSec2_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_BaseSec_2_Black {\
+  class twelfth_M43A_BaseSec2_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_BaseSec_2_Base {\
     scope = 2;\
     scopeArsenal = 2;\
     author = "Sammy";\
@@ -384,7 +384,7 @@
 
 
 #define MEU_VEST_BS3(CAMO,PLATOON,ROLE,DISPLAYNAME)    \
-  class twelfth_M43A_BaseSec3_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_BaseSec_3_Black {\
+  class twelfth_M43A_BaseSec3_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_BaseSec_3_Base {\
     scope = 2;\
     scopeArsenal = 2;\
     author = "Sammy";\
@@ -416,7 +416,7 @@
 
 
 #define MEU_VEST_GUNGNIR1(CAMO,PLATOON,ROLE,DISPLAYNAME) \
-  class twelfth_M43A_GungnirS_1_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirS_1_Black {\
+  class twelfth_M43A_GungnirS_1_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirS_1_Base {\
     scope = 2;\
     scopeArsenal = 2;\
     author = "Sammy";\
@@ -446,7 +446,7 @@
 
 
 #define MEU_VEST_GUNGNIR2(CAMO,PLATOON,ROLE,DISPLAYNAME) \
-  class twelfth_M43A_GungnirS_2_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirS_2_Black {\
+  class twelfth_M43A_GungnirS_2_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirS_2_Base {\
     scope = 2;\
     scopeArsenal = 2;\
     author = "Sammy";\
@@ -478,7 +478,7 @@
 
 
 #define MEU_VEST_GUNGNIR3(CAMO,PLATOON,ROLE,DISPLAYNAME) \
-  class twelfth_M43A_GungnirS_3_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirS_3_Black {\
+  class twelfth_M43A_GungnirS_3_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirS_3_Base {\
     scope = 2;\
     scopeArsenal = 2;\
     author = "Sammy";\
@@ -510,7 +510,7 @@
 
 
 #define MEU_VEST_GUNGNIR1_L(CAMO,PLATOON,ROLE,DISPLAYNAME) \
-   class twelfth_M43A_GungnirL_1_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirL_1_Black {\
+   class twelfth_M43A_GungnirL_1_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirL_1_Base {\
     scope = 2;\
     scopeArsenal = 2;\
     author = "Sammy";\
@@ -540,7 +540,7 @@
 
 
 #define MEU_VEST_GUNGNIR2_L(CAMO,PLATOON,ROLE,DISPLAYNAME) \
-  class twelfth_M43A_GungnirL_2_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirL_2_Black {\
+  class twelfth_M43A_GungnirL_2_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirL_2_Base {\
     scope = 2;\
     scopeArsenal = 2;\
     author = "Sammy";\
@@ -572,7 +572,7 @@
 
 
 #define MEU_VEST_GUNGNIR3_L(CAMO,PLATOON,ROLE,DISPLAYNAME) \
-  class twelfth_M43A_GungnirL_3_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirL_3_Black {\
+  class twelfth_M43A_GungnirL_3_##CAMO##_##PLATOON##_##ROLE##: TCP_V_M43A_GungnirL_3_Base {\
     scope = 2;\
     scopeArsenal = 2;\
     author = "Sammy";\

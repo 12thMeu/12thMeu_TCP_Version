@@ -322,6 +322,7 @@ class CfgWeapons {
   class TCP_V_M43A_BaseSec_1_Base;
   class OPTRE_UNSC_CH252A_Helmet_Base;
   class OPTRE_UNSC_CH252A_Helmet_dp;  // Base uniform item for new-gen armor
+  class TCP_H_Helmet_ECH43A_Base;
   class twelfth_uni_ng_base_wep: Uniform_Base {
     author="Waylen";
     scope=0;
@@ -519,6 +520,32 @@ class CfgWeapons {
     };
   };
 
+  class twelfth_helmECH43A_base: TCP_H_Helmet_ECH43A_Base {
+    scope=0;
+    author="Sammy";
+    scopeArsenal=0;
+    displayName="[12th] Helmet Closed Base (DON'T USE)";
+    ace_hearing_protection=1;
+    ace_hearing_lowerVolume=0;
+    class TCP_uniformDecals
+    {
+      selectionName = "nameCH43A";
+    };
+	  model = "\TCP\Characters\BLUFOR\UNSC\Army\Headgear\helmet_ECH43A\h_helmet_ECH43A_DP.p3d";
+    class ItemInfo: HeadgearItem {
+	  uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Headgear\helmet_ECH43A\h_helmet_ECH43A_DP.p3d";
+      mass=40;
+      modelSides[]={6};
+      passThrough=0.1;
+      class HitpointsProtectionInfo {
+        class Head {
+          hitpointName="HitHead";
+          armor=20;
+          passThrough=0.1;
+        };
+      };
+    };
+  };
   class twelfth_pilot_helm_base: H_HelmetB {
     scope=0;
     author="Waylen";

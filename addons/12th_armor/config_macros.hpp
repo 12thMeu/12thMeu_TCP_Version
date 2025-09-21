@@ -153,8 +153,14 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   class twelfth_U_B_##SHIRT##_##SLEEVE##_##CAMO## : TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Base{\
     scope=2;\
     displayName="[12th] Normal";\
+    ACE_GForceCoef=0.4;\
     class ItemInfo : ItemInfo {\
       uniformClass = QOUTE(TWELFTH_VEH_NORMAL(CAMO,SHIRT,SLEEVE));\
+      containerClass="Supply100"; \
+      mass=1;\
+      uniformType = "Neopren";\
+      allowedSlots[]={"701","801","901"};\
+      armor=20;\
     };\
     hiddenSelectionsTextures[] = {\
       QP(uniforms\uniform\##CAMO##\CBUU_##SHIRT##_CO.paa)\
@@ -178,8 +184,14 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   class twelfth_U_B_##SHIRT##_##SLEEVE##_Bloused_##CAMO## : TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Bloused_Base{\
     scope=2;\
     displayName="[12th] Bloused";\
+    ACE_GForceCoef=0.4;\
     class ItemInfo : ItemInfo {\
       uniformClass = QOUTE(TWELFTH_VEH_BLOUSED(CAMO,SHIRT,SLEEVE));\
+      containerClass="Supply100"; \
+      mass=1;\
+      uniformType = "Neopren";\
+      allowedSlots[]={"701","801","901"};\
+      armor=20;\
     };\
     hiddenSelectionsTextures[] = {\
       QP(uniforms\uniform\##CAMO##\CBUU_##SHIRT##_CO.paa)\
@@ -204,8 +216,14 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   class twelfth_U_B_##SHIRT##_##SLEEVE##_Gloves_##CAMO## : TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_Base{\
     scope=2;\
     displayName="[12th] Gloves";\
+    ACE_GForceCoef=0.4;\
     class ItemInfo : ItemInfo {\
       uniformClass = QOUTE(TWELFTH_VEH_GLOVES(CAMO,SHIRT,SLEEVE));\
+      containerClass="Supply100"; \
+      mass=1;\
+      uniformType = "Neopren";\
+      allowedSlots[]={"701","801","901"};\
+      armor=20;\
     };\
     hiddenSelectionsTextures[] = {\
       QP(uniforms\uniform\##CAMO##\CBUU_##SHIRT##_CO.paa)\
@@ -231,8 +249,14 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   class twelfth_U_B_##SHIRT##_##SLEEVE##_Gloves_Bloused_##CAMO## : TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_Bloused_Base{\
     scope=2;\
     displayName="[12th] Bloused Gloves";\
+    ACE_GForceCoef=0.4;\
     class ItemInfo : ItemInfo {\
       uniformClass = QOUTE(TWELFTH_VEH_BLOUSED_GLOVES(CAMO,SHIRT,SLEEVE));\
+      containerClass="Supply100"; \
+      mass=1;\
+      uniformType = "Neopren";\
+      allowedSlots[]={"701","801","901"};\
+      armor=20;\
     };\
     hiddenSelectionsTextures[] = {\
       QP(uniforms\uniform\##CAMO##\CBUU_##SHIRT##_CO.paa)\
@@ -254,11 +278,17 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   };
 
 #define WEP_CLASS_UNZIPPED(CAMO,SHIRT,SLEEVE) \
-  class twelfth_U_B_##SHIRT##_##SLEEVE##_Unzippedd_##CAMO## : TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Unzipped_Base{\
+  class twelfth_U_B_##SHIRT##_##SLEEVE##_Unzipped_##CAMO## : TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Unzipped_Base{\
     scope=2;\
     displayName="[12th] Unzipped";\
+    ACE_GForceCoef=0.4;\
     class ItemInfo : ItemInfo {\
       uniformClass = QOUTE(TWELFTH_VEH_UNZIPPED(CAMO,SHIRT,SLEEVE));\
+      containerClass="Supply100"; \
+      mass=1;\
+      uniformType = "Neopren";\
+      allowedSlots[]={"701","801","901"};\
+      armor=20;\
     };\
     hiddenSelectionsTextures[] = {\
       QP(uniforms\uniform\##CAMO##\CBUU_##SHIRT##_CO.paa)\
@@ -282,8 +312,14 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   class twelfth_U_B_##SHIRT##_##SLEEVE##_Bloused_Unzipped_##CAMO## : TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Bloused_Unzipped_Base{\
     scope=2;\
     displayName="[12th] Bloused Unzipped";\
+    ACE_GForceCoef=0.4;\
     class ItemInfo : ItemInfo {\
       uniformClass = QOUTE(TWELFTH_VEH_BLOUSED_UNZIPPED(CAMO,SHIRT,SLEEVE));\
+      containerClass="Supply100"; \
+      mass=1;\
+      uniformType = "Neopren";\
+      allowedSlots[]={"701","801","901"};\
+      armor=20;\
     };\
     hiddenSelectionsTextures[] = {\
       QP(uniforms\uniform\##CAMO##\CBUU_##SHIRT##_CO.paa)\
@@ -309,8 +345,14 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   class twelfth_U_B_##SHIRT##_##SLEEVE##_Gloves_Unzipped_##CAMO## : TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_Unzipped_Base{\
     scope=2;\
     displayName="[12th] Gloves Unzipped";\
+    ACE_GForceCoef=0.4;\
     class ItemInfo : ItemInfo {\
       uniformClass = QOUTE(TWELFTH_VEH_GLOVES_UNZIPPED(CAMO,SHIRT,SLEEVE));\
+      containerClass="Supply100"; \
+      mass=1;\
+      uniformType = "Neopren";\
+      allowedSlots[]={"701","801","901"};\
+      armor=20;\
     };\
     hiddenSelectionsTextures[] = {\
       QP(uniforms\uniform\##CAMO##\CBUU_##SHIRT##_CO.paa)\
@@ -336,8 +378,14 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   class twelfth_U_B_##SHIRT##_##SLEEVE##_Gloves_Bloused_Unzipped_##CAMO## : TCP_U_B_CBUU_##SHIRT##_##SLEEVE##_Gloves_Bloused_Unzipped_Base{\
     scope=2;\
     displayName="[12th] Gloves Bloused Unzipped";\
+    ACE_GForceCoef=0.4;\
     class ItemInfo : ItemInfo {\
       uniformClass = QOUTE(TWELFTH_VEH_GLOVES_BLOUSED_UNZIPPED(CAMO,SHIRT,SLEEVE));\
+      containerClass="Supply100"; \
+      mass=1;\
+      uniformType = "Neopren";\
+      allowedSlots[]={"701","801","901"};\
+      armor=20;\
     };\
     hiddenSelectionsTextures[] = {\
       QP(uniforms\uniform\##CAMO##\CBUU_##SHIRT##_CO.paa)\
@@ -982,6 +1030,9 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
   WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,TacShirt,QuarterRoll)                        \
   WEP_CLASS_GLOVES_BLOUSED_UNZIPPED(CAMO,TacShirt,SlimSleeve)                         \
 
+
+
+
 #define NEW_UNIFROM_GI(CAMO)                        \
   NORMAL(CAMO,TShirt,Tucked)                       \
   NORMAL(CAMO,TShirt,Untucked)                       \
@@ -1079,37 +1130,37 @@ class twelfth_M43A_##TYPE##_##CAMO##_##PLATOON##_##ROLE## {     \
     Provide in quotes.
 */
 #define HELM_NV(SUFFIX,DISPLAY)                 \
-class twelfth_helm_##SUFFIX##_nv: twelfth_helm_base { \
-  scope=2;                                      \
-  author="Weber";                               \
-  picture="";                                   \
-  scopeArsenal=2;                               \
-  displayName=DISPLAY;                          \
-  hiddenSelections[] = { "camo", "camo2" };     \
-  hiddenSelectionsTextures[] = {                \
-    #HELM_TEX_PATH(SUFFIX),                     \
-    ""                                          \
-  };                                            \
-  class ItemInfo: HeadgearItem {                \
-    uniformModel="\halo_marine\halo_helm_01";   \
-    mass=40;                                    \
-    picture="";                                 \
-    modelSides[]={6};                           \
-    passThrough=0.1;                            \
-    class HitpointsProtectionInfo {             \
-      class Head {                              \
-        hitpointName="HitHead";                 \
-        armor=20;                               \
-        passThrough=0.1;                        \
-      };                                        \
-    };                                          \
-    hiddenSelections[]= { "camo", "camo2" };    \
-    hiddenSelectionsTextures[]= {               \
-      #HELM_TEX_PATH(SUFFIX),                   \
-      ""                                        \
-    };                                          \
-  };                                            \
-};
+  class twelfth_helm_##SUFFIX##_nv: twelfth_helm_base { \
+    scope=2;                                      \
+    author="Weber";                               \
+    picture="";                                   \
+    scopeArsenal=2;                               \
+    displayName=DISPLAY;                          \
+    hiddenSelections[] = { "camo", "camo2" };     \
+    hiddenSelectionsTextures[] = {                \
+      #HELM_TEX_PATH(SUFFIX),                     \
+      ""                                          \
+    };                                            \
+    class ItemInfo: HeadgearItem {                \
+      uniformModel="\halo_marine\halo_helm_01";   \
+      mass=40;                                    \
+      picture="";                                 \
+      modelSides[]={6};                           \
+      passThrough=0.1;                            \
+      class HitpointsProtectionInfo {             \
+        class Head {                              \
+          hitpointName="HitHead";                 \
+          armor=20;                               \
+          passThrough=0.1;                        \
+        };                                        \
+      };                                          \
+      hiddenSelections[]= { "camo", "camo2" };    \
+      hiddenSelectionsTextures[]= {               \
+        #HELM_TEX_PATH(SUFFIX),                   \
+        ""                                        \
+      };                                          \
+    };                                            \
+  };
 
 /*
   Defines a standard-visor helmet.
@@ -1159,7 +1210,44 @@ class twelfth_helm_##SUFFIX##_nv: twelfth_helm_base { \
   };                                            \
 };   
 
-
+#define HELM_ECH43A(SUFFIX,DISPLAY)                 \
+  class twelfth_helmECH43A_##SUFFIX##: twelfth_helmECH43A_base {    \
+  scope=2;                                      \
+  author="Weber";                                \
+  picture="";                                   \
+  scopeArsenal=2;                               \
+  displayName=DISPLAY;                          \
+  hiddenSelections[]= {"camo","camo1","decals"};             \
+  hiddenSelectionsTextures[] = {                \
+    #HELM_TEX_PATH_CH43A(SUFFIX),				\
+    "\TCP\Characters\BLUFOR\UNSC\Army\Headgear\helmet_ECH43A\data\camo\default\helmet_ECH43A_Visor_CO.paa",\
+	  #HELM_DEC_PATH								\
+  }; 											\
+	class TCP_uniformDecals: TCP_uniformDecals		\
+	{												\
+		decalColor = "white";						\
+	};  											\
+  class ItemInfo: HeadgearItem {                \
+    uniformModel = "\TCP\Characters\BLUFOR\UNSC\Army\Headgear\helmet_ECH43A\h_helmet_ECH43A_DP.p3d";   \
+    picture="";                                 \
+    mass=40;                                    \
+    modelSides[]={6};                           \
+    passThrough=0.1;                            \
+    class HitpointsProtectionInfo {             \
+      class Head {                              \
+        hitpointName="HitHead";                 \
+        armor=20;                               \
+        passThrough=0.1;                        \
+      };                                        \
+    };                                          \
+    hiddenSelections[]= {"camo","camo1","decals"};      \
+    hiddenSelectionsTextures[]= {               \
+      #HELM_TEX_PATH_CH43A(SUFFIX),				\
+      "\TCP\Characters\BLUFOR\UNSC\Army\Headgear\helmet_ECH43A\data\camo\default\helmet_ECH43A_Visor_CO.paa",\
+	    #HELM_DEC_PATH	  						\
+    };                                          \
+  };                                            \
+};  
 
 #define HELM_SV(SUFFIX,DISPLAY)                 \
 class twelfth_helm_##SUFFIX##: twelfth_helm_base {    \
@@ -1273,6 +1361,7 @@ class twelfth_helm_##SUFFIX##: twelfth_helm_base {    \
   HELM_NV(##CAMO##_lpl_psg, "[12th][Inf][NV][Logi] Helmet (PSG)")       \
   HELM_NV(##CAMO##_lpl_pl,  "[12th][Inf][NV][Logi] Helmet (PL)")        \
   HELM_NV(##CAMO##_lpl_med, "[12th][Inf][NV][Logi] Helmet (Corpsman)")  \
+  HELM_ECH43A(##CAMO##,"[12th][Inf][Closed] Helmet")
 
 /* Stands for helm, no visor, gear info. */
 #define HELM_NV_GI(CSFX,CAMO,EL,ROLE) \
