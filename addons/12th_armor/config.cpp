@@ -631,12 +631,19 @@ class XtdGearModels {
 
     class twelfth_base_ch43a {
       label="12th Infantry Helmets";
-      options[] = {"camo","element","role"};
+      options[] = {"camo","closed","element","role"};
       class camo {
         alwaysSelectable = 1;
         label="Camouflage";
         values[]={"std"};
         class std {label="Standard";};
+      };
+      class closed {
+        alwaysSelectable = 1;
+        label="Face";
+        values[]={"yes","no"};
+        class no  {label="Open";};
+        class yes  {label="Closed";};
       };
       class element {
         alwaysSelectable = 1;
